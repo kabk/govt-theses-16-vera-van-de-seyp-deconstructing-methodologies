@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	outline: transparent solid 0px;
+}
+
+body {
+	background-color: white,
+}
+
+.type-field {
+		position: relative;
+		display: block;
+		width: 600px;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+		padding: 100px 0;
+}
+
+h1.bold {
+	text-align: center;
+	font-family: "machiavellimedium";
+	font-weight: 700;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+}
+
+h1.medium {
+	text-align: left;
+	font-family: "machiavelli_boldbold";
+	font-weight: 700;
+	position: relative;
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	height: auto;
+}
+
+
+h1.regular {
+	text-align: center;
+	font-family: "machiavelli_regularregular";
+	font-weight: 700;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	width: 100%;
+	height: auto;
+}
+
+.explanation {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	text-transform: uppercase;
+	position: fixed;
+	display: block;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: 0;
+	height: 20px;
+	font-size: 20px;
+	line-height: 12px;
+}
+
+p.align-left {
+	position: fixed;
+	left: 0;
+	margin: 20px;
+	width: auto;
+	height: 20px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;     
+	-ms-user-select: none;     
+	user-select: none;         
+}
+
+p.align-right {
+	position: fixed;
+	margin: 20px;
+	display: block;
+	text-align: right;
+	right: 0;
+	top: 0;
+	width: auto;
+	height: 20px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;     
+	-ms-user-select: none;     
+	user-select: none;  
+}
+
+p.align-center {
+	position: fixed;
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	height: 20px;
+	margin-top: 20px;
+}
+
+
+
+/**::selection {
+  background: rgba(0,0,255,0.5);
+  color: black;
+}
+*::-moz-selection {
+  background: rgba(0,0,255,0.5);
+  color: black;
+}
+*::-webkit-selection {
+  background: rgba(0,0,255,0.5);
+  color: black;
+}*/
