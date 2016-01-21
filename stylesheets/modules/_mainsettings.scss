@@ -1,10 +1,401 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	outline: transparent solid 0px;
+}
 
 body {
-	background-color: blue;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	padding: 0;
+	overflow: hidden;
 }
 
 
 
+$image-field-width: 29%;
+$text-field-width: 500px;
+$reference-field-width: 29%;
+$padding-elements: 50px;
+$border-radius: 6px;
+$highlight-color: #00f;
+$header-height: 21px;
+$header-color: #eee;
+$header-border: grey;
+$window-padding: 20px;
+$text-block-height: 650px;
+$text-block-width: 800px;
+
+// Main division
+
+.menu {
+	font-family: 'Lora', serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 10%;
+	height: 100px;
+	font-size: 8px;
+	line-height: 24px;
+	color: white;
+	padding: $padding-elements/2;
+}
+
+//  Window settings
+
+.header {
+	position: relative;
+	height: auto;
+	min-height: 40px;
+	width: 100%;
+	border-radius: 6px 6px 0 0;
+	// z-index: 100;
+	background-color: $header-color;
+	cursor: default;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */      
+}
+
+.header-title {
+	position: relative;
+	width: 55%;
+	float: right;
+	padding-top: $header-height / 3;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 10px;
+	text-align: left;
+	cursor: default;
+}
+
+//  HACKER 
+
+.hacker-block {
+	position: relative;
+	display: block;
+	height: 300px;
+	width: 420px;
+	top: 200px;
+	left: $text-block-width+40;
+	margin: 0;
+	border-radius: $border-radius;
+	border: 1px solid $header-color;
+}
+
+.hacker-field {
+	top: $header-height+ 5;
+	position: absolute;
+	background-color: black;
+	border-radius: 0 0 $border-radius $border-radius;
+	color: rgb(0,255,0);
+	padding: 20px; 
+	font-family: 'Source Code Pro',;
+}
+
+.buttons {
+	position: relative;
+    display: block;
+    float: left;
+    clear: both;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 8px;
+    &:hover .circle-sh {
+    	display: block;
+    }
+}
+
+.circle {
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-right: 8px;
+	margin-top: 3px;
+	background: #888;
+	border: 1px solid #444;
+}
+
+.circle-sh {
+	display: none;
+	position: relative;
+	width: 100%;
+	font-size: 12px;
+	line-height: 10px;
+	text-align: center;
+	font-family: 'Source Code Pro',;
+	font-style: bold;
+	height: 100%;
+	color: #333;
+	user-select: none;
+	cursor: pointer;
+}
+
+.block {
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+	}
+
+
+// Text window
+
+.text-block {
+	position: absolute;
+	display: block;
+	top: $window-padding;
+	left: $window-padding;
+	width: $text-block-width;
+	height: $text-block-height;
+	margin: 0;
+	box-shadow: 0px 10px 50px 1px rgba(50, 50, 50, 0.5);
+	border-radius: $border-radius;
+	background-color: white;
+}
+
+.text-edit-tools {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: blue;
+	height: $header-height+5;
+	background-color: $header-color;
+	border-top: 1px solid $header-border;
+	border-bottom: 1px solid $header-border;
+}
+
+.text-edit {
+	text-decoration: none;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 4px 6px;
+	line-height: 20px;
+	text-align: center;
+	width: auto;
+	font-size: 10px;
+	min-width: 20px;
+	height: 20px;
+	outline: transparent solid 0px;
+	
+	&:nth-of-type(1) {
+		margin-left: 20px;
+		padding: 0 4px;
+	}
+
+	&:hover {
+		background: black;
+		color: white;
+	}
+	:active {
+		background: black;
+		outline: transparent solid 0px;
+	}
+}
+
+.content-field {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 89%;
+	margin-top: 0;
+	overflow-y: scroll;
+}
 
 
 
+.text-field {
+	position: relative;
+	display: block;
+	width: $text-field-width;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.reference-field {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: $reference-field-width;
+	float: left;
+}
+
+::selection {
+  background: #B1D6FF;
+  color: black;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #B1D6FF;
+  color: black;
+  text-shadow: none;
+}
+
+
+// Image window
+
+.image-block {
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: auto;
+	height: auto;
+	margin: 0 $padding-elements;
+	padding: 0px;
+	border-radius: 6px;
+	box-shadow: 0px 10px 50px 1px rgba(50, 50, 50, 0.5);
+	z-index: 100;
+	opacity: 0;	
+}
+
+.image-title {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: auto;
+	float: right;
+	font-family: 'Helvetica Neue', sans-serif;
+	text-align: center;
+	letter-spacing: 0.4px;
+	line-height: 21px;
+	font-size: 13px;
+	color: #151515;
+}
+
+.image-block img {
+	position: absolute;
+	display: block;
+	width: 90%;
+	padding: 1px;
+
+	height: auto;
+	top: 22px;
+	margin: 0 auto;
+}
+
+
+// Text sector
+
+.title {
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+}
+
+.blue {
+	color: blue;
+	font-family: 'Source Code Pro',;
+}
+
+.broad {
+	position: relative;
+	display: block;
+	height: auto;
+	padding: 0 0 0 $padding-elements+30px;
+	text-align: left;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	text-indent: -30px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.broad a {
+	text-decoration: none;
+	color: black;
+}
+
+//  Color window
+.colorSelector {
+	position: relative;
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.color-block {
+	position: relative;
+	display: block;
+	height: 300px;
+	width: 420px;
+	top: 300px;
+	left: 70%;
+	margin: 0;
+	border-radius: $border-radius;
+	border: 1px solid $header-color;
+}
+
+
+// Reference sector
+.reference {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	height: auto;
+	margin: 0 $padding-elements;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-size: 10px;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+.landing-page {
+	position: absolute;
+	display: block;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Source Code Pro',;
+	padding-top: 25%;
+	line-height: 60px;
+}
+
+.password {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+
+	width: 300px;
+	height: 60px;
+	margin: 0 ;
+	border: 2px solid white;
+	margin: 0 auto;
+}

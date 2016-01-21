@@ -1,2 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  outline: transparent solid 0px; }
+
 body {
-  background-color: blue; }
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  padding: 0;
+  overflow: hidden; }
+
+.menu {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 10%;
+  height: 100px;
+  font-size: 8px;
+  line-height: 24px;
+  color: white;
+  padding: 25px; }
+
+.header {
+  position: relative;
+  height: auto;
+  min-height: 40px;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  background-color: #eee;
+  cursor: default;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
+.header-title {
+  position: relative;
+  width: 55%;
+  float: right;
+  padding-top: 7px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 10px;
+  text-align: left;
+  cursor: default; }
+
+.hacker-block {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 420px;
+  top: 200px;
+  left: 840px;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid #eee; }
+
+.hacker-field {
+  top: 26px;
+  position: absolute;
+  background-color: black;
+  border-radius: 0 0 6px 6px;
+  color: lime;
+  padding: 20px;
+  font-family: "Source Code Pro"; }
+
+.buttons {
+  position: relative;
+  display: block;
+  float: left;
+  clear: both;
+  left: 0;
+  top: 0;
+  width: 68px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 8px; }
+  .buttons:hover .circle-sh {
+    display: block; }
+
+.circle {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  margin-top: 3px;
+  background: #888;
+  border: 1px solid #444; }
+
+.circle-sh {
+  display: none;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  font-family: "Source Code Pro";
+  font-style: bold;
+  height: 100%;
+  color: #333;
+  user-select: none;
+  cursor: pointer; }
+
+.block {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
+
+.text-block {
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 20px;
+  width: 800px;
+  height: 650px;
+  margin: 0;
+  box-shadow: 0px 10px 50px 1px rgba(50, 50, 50, 0.5);
+  border-radius: 6px;
+  background-color: white; }
+
+.text-edit-tools {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: blue;
+  height: 26px;
+  background-color: #eee;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey; }
+
+.text-edit {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 4px 6px;
+  line-height: 20px;
+  text-align: center;
+  width: auto;
+  font-size: 10px;
+  min-width: 20px;
+  height: 20px;
+  outline: transparent solid 0px; }
+  .text-edit:nth-of-type(1) {
+    margin-left: 20px;
+    padding: 0 4px; }
+  .text-edit:hover {
+    background: black;
+    color: white; }
+  .text-edit :active {
+    background: black;
+    outline: transparent solid 0px; }
+
+.content-field {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 89%;
+  margin-top: 0;
+  overflow-y: scroll; }
+
+.text-field {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0; }
+
+.reference-field {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 29%;
+  float: left; }
+
+::selection {
+  background: #B1D6FF;
+  color: black;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #B1D6FF;
+  color: black;
+  text-shadow: none; }
+
+.image-block {
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin: 0 50px;
+  padding: 0px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 50px 1px rgba(50, 50, 50, 0.5);
+  z-index: 100;
+  opacity: 0; }
+
+.image-title {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  float: right;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 21px;
+  font-size: 13px;
+  color: #151515; }
+
+.image-block img {
+  position: absolute;
+  display: block;
+  width: 90%;
+  padding: 1px;
+  height: auto;
+  top: 22px;
+  margin: 0 auto; }
+
+.title {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0; }
+
+.blue {
+  color: blue;
+  font-family: "Source Code Pro"; }
+
+.broad {
+  position: relative;
+  display: block;
+  height: auto;
+  padding: 0 0 0 80px;
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  text-indent: -30px;
+  font-size: 16px;
+  line-height: 26px; }
+
+.broad a {
+  text-decoration: none;
+  color: black; }
+
+.colorSelector {
+  position: relative;
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  cursor: pointer; }
+
+.color-block {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 420px;
+  top: 300px;
+  left: 70%;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid #eee; }
+
+.reference {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  height: auto;
+  margin: 0 50px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 10px;
+  word-break: keep-all;
+  word-wrap: break-word; }
+
+.landing-page {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Source Code Pro";
+  padding-top: 25%;
+  line-height: 60px; }
+
+.password {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  width: 300px;
+  height: 60px;
+  margin: 0;
+  border: 2px solid white;
+  margin: 0 auto; }
