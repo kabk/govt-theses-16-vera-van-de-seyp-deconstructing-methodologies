@@ -357,7 +357,7 @@
             function scrollToChapter() {
 
                 var offset = $(window).scrollTop();
-                var top = 40;
+                var top = 50;
                 // var Land = $("#LandingPage").offset().top - top;
                 var Intro = $("#Introduction").offset().top - top;
                 var Ch1 = $("#Chapter1").offset().top - top;
@@ -466,6 +466,12 @@
                         isBlue = false;
                     }
                 });
+
+                $('.header-stuff:nth-of-type(2)').click( function() {
+                    $(".abstract").toggle();
+               });
+
+
             }
 
             function scrollPage(event) {
@@ -591,6 +597,7 @@
                    viewCode();
 
                 });
+               
                 $('#Landing').focus();
 
             });

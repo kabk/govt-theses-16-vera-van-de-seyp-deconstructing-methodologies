@@ -565,6 +565,10 @@ header {
 .header-stuff:nth-of-type(1):hover {
 	color: blue;
 }
+.header-stuff:nth-of-type(2):hover {
+	color: blue;
+}
+
 
 .header-stuff:nth-of-type(2) {
 	text-align: center;
@@ -656,6 +660,25 @@ header {
 	box-shadow: 0px 0 10px 10px $support-color;
 }
 
+.abstract {
+	position: fixed;
+	display: none;
+	top: 40px;
+	width: 40%;
+	left: 30%;
+	// font-size: $brd-txt-s;
+	// line-height: $brd-ld-s;
+	padding: 30px;
+	margin: 0 auto;
+	color: black;
+	background-color: $white;
+	z-index: 500;
+	font-family: 'Source Sans Pro';
+	-webkit-box-shadow: 0px 0 10px 10px $support-color;
+	-moz-box-shadow: 0px 0 10px 10px $support-color;
+	box-shadow: 0px 0 10px 10px $support-color;
+}
+
 
 
 .menu-link {
@@ -716,12 +739,12 @@ header {
 	background-color: black;
 	color: $white;
 	font-family: 'Source Code Pro';
-	
 }
 
 .landing-title {
 	position: relative;
-	margin: 30px;
+	padding: 100px 30px 30px 30px;
+
 	@include breakpoint('small') {
 		font-size: $title-s;
 		line-height: $title-ld-s;	
@@ -766,8 +789,8 @@ colophon {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	
 }
+
 .colophon-text {
 	position: relative;
 	max-width: 500px;
