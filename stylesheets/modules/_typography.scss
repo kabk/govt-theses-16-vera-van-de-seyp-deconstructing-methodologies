@@ -1,0 +1,132 @@
+$padding: 20px;
+
+	name {
+		position: relative;
+		display: block;
+		font-family: 'Source Serif Pro';
+		font-weight: 700;
+		text-align: left;
+		// text-transform: uppercase;
+
+		@include breakpoint('small') {
+			font-size: $title-s;
+			width: $width-s;
+			margin: $margin-s;
+			padding: 40px 0 20px 0;
+			line-height: $title-ld-s;
+		}
+		@include breakpoint('medium') {
+			width: (3/5) * 100% - $margin-content*2;
+
+			font-size: $title-m;
+			line-height: $title-ld-m;
+			padding: 40px 0 100px  0;
+			margin: 0 $margin-content;
+		}
+		@include breakpoint('large') {
+			width: 100% - $margin-content*2;	
+			font-size: $title-l;
+			line-height: $title-ld-l;
+			padding: 0px 0 150px 0;
+			float: left;
+			margin: 0 $margin-content;
+		}
+
+		background: rgba(255,0,132,0.45);
+		background: -moz-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $support-color), color-stop(40%, rgba(255,170,214,0)), color-stop(60%, rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -o-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -ms-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: radial-gradient(ellipse at center, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ffffff', GradientType=1 );	
+
+	}	
+
+
+	subtitle {
+		font-family: 'Source Code Pro', serif;
+		font-weight: 900;
+		float: left;
+		text-transform: uppercase;
+		clear: both;
+		padding-top: 0;
+		width: 100%;
+		@include breakpoint('small') {
+			font-size: $brd-txt-s;
+			line-height: $brd-ld-m;
+		}
+		@include breakpoint('medium') {
+			font-size: $brd-txt-m;
+			line-height: $brd-ld-m;
+		}
+		@include breakpoint('large') {
+			font-size: $brd-txt-l;
+			line-height: $brd-ld-l*1.4;
+		}
+	}
+	
+	quote {
+		clear: both;
+		float: left;
+		display: block;
+		position: relative;
+		font-weight: 700;
+
+
+		@include breakpoint('small') {
+			font-size: $title-s;
+			line-height: $title-ld-s;
+
+			width: $width-s;
+			margin: $margin-s;
+			padding: $padding 0;
+
+		}
+		@include breakpoint('medium') {
+			font-size: $title-m;
+			line-height: $title-ld-m;
+			
+			width: auto;
+			padding: $padding;
+			margin: $padding 0;
+		}
+		@include breakpoint('large') {
+			font-size: $title-m;
+			line-height: $title-ld-m;
+	
+			width: auto;
+			padding: $padding 0;
+			margin: 0;
+		}
+		background: rgba(255,0,132,0.45);
+		background: -moz-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $support-color), color-stop(40%, rgba(255,170,214,0)), color-stop(60%, rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -o-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: -ms-radial-gradient(center, ellipse cover, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		background: radial-gradient(ellipse at center, $support-color 0%, rgba(255,170,214,0) 40%, rgba(255,255,255,0) 60%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ffffff', GradientType=1 );	
+
+	}
+
+	p:first-of-type {
+		text-indent: 0mm;
+	}
+
+	.i {
+		font-style: italic;
+	}
+
+	i {
+		font-style: italic;
+	}
+
+
+
+
+
+	// text a {
+	// 	text-decoration: none;
+	// 	// color: black;
+	// }

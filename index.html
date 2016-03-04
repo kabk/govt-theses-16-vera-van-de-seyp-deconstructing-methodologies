@@ -1,155 +1,1039 @@
-<!DOCTYPE html>
-
 <!-- 
-     __    __ __      __  ___ __             __ __  __  __         __ __  __         
-|  ||_ |  /  /  \|\/||_    | /  \  |\/|\_/  /  /  \|  \|_     |\ ||_ |__)|  \   
-|/\||__|__\__\__/|  ||__   | \__/  |  | |   \__\__/|__/|__,   | \||__| \ |__/   
-                                                                                     
+	────────────────────────────────
+	────────────────────────────── 
+	─────────────────███████───────
+	──────────────████████████──────		
+	──────────────███───────███────  				
+	─────────────███▀███▀███▀██─────		   
+	─────────────███─────────██─────██─────██────█████───
+	█───────────████────▀────███────██─────██──██─────██
+	██─────────██████───▀───█████───██─────██──██─────██
+	─█─────────███████─────██████─────██──██───██─────██
+	█▄─────────██████──██──████─█───────██─────██─────██
+	─▄███████████████──██──██████───────██─────██─────██
+	───██████████████──██──████████─────██───────█████───
+	────█████████████──██──█████████────
+	─────────────████──██─█████──███───
+	──────────────███──██─█████──███──
+	──────────────███─────█████████
+	──────────────██─────████████▀
+	──────────────█████████─██
+	────────────────██████████
+	────────────────██████████
+	─────────────────████████
+	──────────────────██████████▄▄
+	────────────────────█████████▀
+	────────────────────██████████
+	─────────────────────████──███
+	────────────────────▄████▄──██
+	────────────────────██████───▀
+	────────────────────▀▄▄▄▄▀ 
+-->
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░▄▄▄▄▄▄▄░░░░░░░░░
-░░░░░░░░░▄▀▀▀░░░░░░░▀▄░░░░░░░
-░░░░░░░▄▀░░░░░░░░░░░░▀▄░░░░░░
-░░░░░░▄▀░░░░░░░░░░▄▀▀▄▀▄░░░░░
-░░░░▄▀░░░░░░░░░░▄▀░░██▄▀▄░░░░
-░░░▄▀░░▄▀▀▀▄░░░░█░░░▀▀░█▀▄░░░
-░░░█░░█▄▄░░░█░░░▀▄░░░░░▐░█░░░
-░░▐▌░░█▀▀░░▄▀░░░░░▀▄▄▄▄▀░░█░░
-░░▐▌░░█░░░▄▀░░░░░░░░░░░░░░█░░
-░░▐▌░░░▀▀▀░░░░░░░░░░░░░░░░▐▌░
-░░▐▌░░░░░░░░░░░░░░░▄░░░░░░▐▌░
-░░▐▌░░░░░░░░░▄░░░░░█░░░░░░▐▌░
-░░░█░░░░░░░░░▀█▄░░▄█░░░░░░▐▌░
-░░░▐▌░░░░░░░░░░▀▀▀▀░░░░░░░▐▌░
-░░░░█░░░░░░░░░░░░░░░░░░░░░█░░
-░░░░▐▌▀▄░░░░░░░░░░░░░░░░░▐▌░░
-░░░░░█░░▀░░░░░░░░░░░░░░░░▀░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
- -->
+
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Hacker Ethic</title>
-	    <meta name="description" content="For now, I'm still working on my thesis. But it should be 'hackable' by the user. I want the edited text to be highlighted, and somehow stored or saved or e-mailed (since there is no way to save it without back-end–or is there?). There will be a column for images, a popup, on hovering the text, with references and I want the reader to be able to save the text as a pdf (html to print?). That was all." />
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Vera van de Seyp">
+	<meta name="description" content="'A New Kind of Print' (2016), the thesis of Vera van de Seyp at the Royal Academy of Arts, The Hague.
+	A New Kind of Print discusses the question why designers should exceed the limitations of their tools by learning how to write code. Subtopics are the design discipline, tools, technology, craftsmanship, the hacker ethic, open source, authorship, code literacy, and subjectivity of language. ">
+	
+	<meta property="og:title" content="A New Kind Of Print" />
+	<meta property="og:image" content="images/background.png" />
+	<meta name="og:description" content="'A New Kind of Print' (2016), the thesis of Vera van de Seyp at the Royal Academy of Arts, The Hague.
+	A New Kind of Print discusses the question why designers should exceed the limitations of their tools by learning how to write code. Subtopics are the design discipline, tools, technology, craftsmanship, the hacker ethic, open source, authorship, code literacy, and subjectivity of language. " />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <meta property="og:title" content="The Hacker Ethic" />
-	    <meta property="og:image" content="http://www.designboom.com/contemporary/writinganddrawing/10.jpg" />
-	    <meta name="og:description" content="For now, I'm still working on my thesis. But it should be 'hackable' by the user. I want the edited text to be highlighted, and somehow stored or saved or e-mailed (since there is no way to save it without back-end–or is there?). There will be a column for images, a popup, on hovering the text, with references and I want the reader to be able to save the text as a pdf (html to print?). That was all." />
 
-	    <meta property="twitter:creator" content="Vera van de Seyp" />
-	    <meta property="dc:creator" content="Vera van de Seyp" />
-	    <meta property="twitter:site" content="@veravandeseyp">
-		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
-		<script src="scripts/jquery-1.11.3.js" type="text/javascript"> </script>
-		<script src="scripts/jquery-ui.min.js" type="text/javascript"> </script>
+	<meta property="twitter:creator" content="Vera van de Seyp" />
+	<meta property="dc:creator" content="Vera van de Seyp" />
+	<meta property="twitter:site" content="@veravandeseyp">
+	<title>A New Kind of Print</title>
 
-		<script src="scripts/colorpicker.js" type="text/javascript"> </script>
-		<script type="text/javascript" src="https://www.l2.io/ip.js?var=ip"></script> 
-		<script src="http://www.alohaeditor.org/download/aloha.min.js"></script>
-		<script type="text/javascript" src="scripts/hackscript.js">	</script>
-		<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/framework.css">
-	</head>
-	<body>
-		
-		<div class="menu">
-			Design hackerism tools: Abstract <br>
-			Vera van de Seyp <br>
-			2015
-		</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"  type="text/javascript"></script>
+	<script src="scripts/jquery.lazyload.js"> </script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="scripts/jGravity.js"> </script>
+	<script type="text/javascript" src="scripts/highlight.pack.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
 
-		<div class="hacker-block block draggable">
-			<div class="header">
-				<div class="buttons">
-					<div class="circle red">
-						<div class="circle-sh"><b>x</b></div> 
-					</div>
-					<div class="circle yellow">
-						<div class="circle-sh"><b>–</b></div> 
-					</div>
-					<div class="circle green">
-						<div class="circle-sh"><b>ø</b></div> 
-					</div>
-				</div>
-				<div class="header-title">Meta</div>
-			</div>
-			<div class="hacker-field editable">
-				<p class="data your-password"></p>
 
-				<p class="data ip"> You've been here for 0 seconds</p>
-				<p class="data visit-time"> </p>
-				<p class="data coordinates"></p>
-				<p class="data location"></p>
-				<p class="data computer"></p>
-				<p class="data os"></p>
-				<p class="data browser"></p>
-				<p class="data browserversion"></p>
-				<p class="data cookies"></p>
-				<p class="data language"></p>
-			</div>
-		</div>
-		
-		<div class="text-block block draggable">
-			<div class="header">
-				<div class="buttons">
-					<div class="circle red">
-						<div class="circle-sh"><b>x</b></div> 
-					</div>
-					<div class="circle yellow">
-						<div class="circle-sh"><b>–</b></div> 
-					</div>
-					<div class="circle green">
-						<div class="circle-sh"><b>ø</b></div> 
-					</div>
-				</div>
-				<div class="header-title">Abstract</div>
+	<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700|Source+Code+Pro|Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
-				<div class="text-edit-tools"> 
-					<div class="text-edit action-bold">B</div>
-					<div class="text-edit action-italic">I</div>
-					<div class="text-edit action-underline">U</div>
-					<div class="text-edit action-unformat">✘</div>
-				</div>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/atelier-dune-dark.css">
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+	<behind>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+	</behind>
+	<div class="percentage-line"></div>
+
+
+	<div id="Landing" contenteditable class="landing-page">	
+		A New Kind of Print 
+	</div>
+
+	<header>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+
+
+		<div class="header-content">
+			<div class="header-stuff chapter-title"></div>
+
+			<div class="header-stuff">A New Kind of Print</div>
+			<div class="header-stuff header-buttons">
+				<div class="header-button"  id="showContent"> Structure</div>	
+				<div class="header-button"  id="showTextOnly"> Text only </div>
+				<div class="header-button" id="kill">Kill</div>
+				<div class="header-button-small"></div>
 			</div>
 	
-			<div class="content-field">
-				<div class="text-field">
-
-					<div class="title editable" spellcheck="true"> I.I Abstract
-					</div>		
-					<div class="broad editable" spellcheck="true">
-						<p>
-							This discourse is composed around the concept of deconstruction, as first introduced by philosopher Jacques Derrida. His theory is connected to the hacking culture that has been expanding rapidly over the last century. Over time, the hackers' ethic has taken a prominent position: a never-exceeding urge for a high-level, passionate play and an attempt to consciously exceed limitations of existing tools and <c href="img-1">frameworks</c>. 
-						</p>
-						<p>
-							These principles of play and exceeding limitations can be applied to design, too. As graphic design seems to be on a crossroad, many new forms of design have been made in the last decade. In some new forms of design, hackers ethic has been a fundamental basis for the experimental approach and innovative outcome of the work. <a href="1"> Design </a> dealing with experimentation and exceeding limits of tools can roughly be split up in to physical, digital and conceptual works. These three orientations will be discussed and explained with fitting examples. 
-						</p>
-						<p>
-							The tendency of design that seeks a next level and exceeds the existing boundaries, has socio-economical, political and creative consequences for the field. Showing the current consequences and influences, it is shown to what extent the hackers ethic <a href="2"> could </a> be primordial for the future advancement of design. 
-						</p>
-						<p>
-							Towards the end of the discourse, opinions of designers that work accordingly to the hackers ethic will be pointed out through an interview. The piece will conclude with a vision of the writer.
-						</p>
-					</div>
-				</div>
-				<div class="reference-field">
-					<div class="reference 1"> 
-						No Author, 'Graphic Design (full-time and part-time)', http://www.kabk.nl/pagewideEN.php?id=0005/ , consulted on December 12, 2015. 
-					</div>
-					<div class="reference 2"> 
-						Meggs, Philip B. (1983), A history of graphic design. New York: Van Nostrand Reinhold. 
-					</div>
-				</div>
-			</div> 	
-
 		</div>
 
-		<div class="landing-page">
-			
-			Type in your password and press enter:
-			<div dir="rtl" class="password" contenteditable="true" spellcheck="false"></div>
+	</header>
+
+	<div class="menu">	
+			<a href="#Landing" class="menu-link">Landing</a>	
+			<a href="#Introduction" class="menu-link">Introduction: The extension of man</a>
+			<a href="#Chapter1" class="menu-link">  Chapter 1: The conflicts of new media</a>
+			<a href="#Chapter2" class="menu-link"> Chapter 2: A brave new world</a>
+			<a href="#Chapter3" class="menu-link"> Chapter 3: Literacy</a>
+			<a href="#Conclusion" class="menu-link">Conclusion: A New Kind of Print</a>
+			<a href="#Colophon" class="menu-link">Colophon</a>
+			<a href="#Footer" class="menu-link">Footer</a>
+	</div>
+	
+
+
+
+	<chapter class="introduction">
+		<chapternumber> [0] introduction </chapternumber>
+		<name id="Introduction">The extension of man</name>
+		<div class="name-print"> 
+				
+				<br>████████╗██╗__██╗███████╗____███████╗██╗__██╗████████╗███████╗███╗___██╗███████╗██╗_██████╗_███╗___██╗_____██████╗_███████╗____███╗___███╗_█████╗_███╗___██╗<br>╚══██╔══╝██║__██║██╔════╝____██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝████╗__██║██╔════╝██║██╔═══██╗████╗__██║____██╔═══██╗██╔════╝____████╗_████║██╔══██╗████╗__██║<br>___██║___███████║█████╗______█████╗___╚███╔╝____██║___█████╗__██╔██╗_██║███████╗██║██║___██║██╔██╗_██║____██║___██║█████╗______██╔████╔██║███████║██╔██╗_██║<br>___██║___██╔══██║██╔══╝______██╔══╝___██╔██╗____██║___██╔══╝__██║╚██╗██║╚════██║██║██║___██║██║╚██╗██║____██║___██║██╔══╝______██║╚██╔╝██║██╔══██║██║╚██╗██║<br>___██║___██║__██║███████╗____███████╗██╔╝_██╗___██║___███████╗██║_╚████║███████║██║╚██████╔╝██║_╚████║____╚██████╔╝██║_________██║_╚═╝_██║██║__██║██║_╚████║<br>___╚═╝___╚═╝__╚═╝╚══════╝____╚══════╝╚═╝__╚═╝___╚═╝___╚══════╝╚═╝__╚═══╝╚══════╝╚═╝_╚═════╝_╚═╝__╚═══╝_____╚═════╝_╚═╝_________╚═╝_____╚═╝╚═╝__╚═╝╚═╝__╚═══╝<br>____________________________________________________________________________________________________________________________________________________________
 		</div>
-	</body>
+
+		<content>
+			<text id="intro">
+					It is the developing of tools that distinguishes humans from monkeys. The earliest humans evolved more than 2,8 million years ago--being the first species of which evidence of the use of tools has been proven. <a id="ref-0" href="#0"></a> Tools are the extension of man: they make up a part of who we became as human beings. 
+					<br><table></table>Since the popularisation of new media, graphic design has been in an identity crisis, split up between traditional and modern methodologies. The design profession has shifted from designing a specific medium to finding a way to show a message in the best way possible. Its significance lies in translating raw content, whether a written manuscript or a database, into an understandable  form. <a id="ref-0.1" href="#0.1"></a> No matter what that content is, this core essence of design remains. 
+				
+					Now here’s the problem. The content is changing: stories are constructed from new resources, such as databases and dynamic information. Messages are displayed on different types of media. These are all new tools. An essential aspect of our practice is the translation that is being made from content to form. The way we translate to a form may change accordingly to the content itself. In my opinion, this is our greatest talent. We can give meaning by ordering and editing. And this leads me to formulate my main question.
+				
+
+					<quote>
+						Why is it important for designers to surpass the limitations of their tools by learning how to program?
+					</quote>
+
+					<br>To determine the answer to this question, my research focuses on the following topics. In the first chapter, the history of graphic design, discussions about the current discipline, the unicorn myth, cognition and craftsmanship are clarified. The second chapter elaborates on the relation between innovation, the hacker ethic, open source and authorship in the current age. The third chapter unfolds in an explanation of the importance of code literacy in relation to subjectivity and social responsibility. Finally, the answer to the question above can be found in the conclusion.
+					<img class="image-print" image-print src="images/intro/1.jpg">
+			</text>
+			<references> 
+					<div class="reference intro"  href="#ref-0" id="0">
+						Ghosh ,P., <i>'First human' discovered in Ethiopia</i>, <a href='http://www.bbc.com/news' target='_blank'>http://www.bbc.com/news</a>, last consulted on August 25, 2015.
+					</div>
+
+					<div class="reference intro"  href="#ref-0.1" id="0.1"> 
+						Meggs, Philip B. (1983), <i> A history of graphic design</i>. New York: Van Nostrand Reinhold.
+					</div>
+
+
+			</references>
+			<images>
+					<div class="side-image-container">
+						<img class="side-image" data-original="images/intro/1.jpg">
+
+						<div class="image-text">
+							<i>2001, A Space Oddesey,</i> 
+							Stanley Kubrick
+
+						</div>
+					</div>
+					
+			</images>
+
+		</content>
+	</chapter>
+
+
+
+	<chapter> 
+
+		<chapternumber> [0001] (1) chapter 1 </chapternumber>
+		<name id="Chapter1">The conflicts of new media</name>
+		<div class="name-print">
+			████████╗██╗__██╗███████╗_____██████╗_██████╗_███╗___██╗███████╗██╗_____██╗_██████╗████████╗███████╗<br>
+			╚══██╔══╝██║__██║██╔════╝____██╔════╝██╔═══██╗████╗__██║██╔════╝██║_____██║██╔════╝╚══██╔══╝██╔════╝<br>
+			___██║___███████║█████╗______██║_____██║___██║██╔██╗_██║█████╗__██║_____██║██║________██║___███████╗<br>
+			___██║___██╔══██║██╔══╝______██║_____██║___██║██║╚██╗██║██╔══╝__██║_____██║██║________██║___╚════██║<br>
+			___██║___██║__██║███████╗____╚██████╗╚██████╔╝██║_╚████║██║_____███████╗██║╚██████╗___██║___███████║<br>
+			___╚═╝___╚═╝__╚═╝╚══════╝_____╚═════╝_╚═════╝_╚═╝__╚═══╝╚═╝_____╚══════╝╚═╝_╚═════╝___╚═╝___╚══════╝<br>
+			____________________________________________________________________________________________________<br>
+			_██████╗_███████╗____███╗___██╗███████╗██╗____██╗____███╗___███╗███████╗██████╗_██╗_█████╗__________<br>
+			██╔═══██╗██╔════╝____████╗__██║██╔════╝██║____██║____████╗_████║██╔════╝██╔══██╗██║██╔══██╗_________<br>
+			██║___██║█████╗______██╔██╗_██║█████╗__██║_█╗_██║____██╔████╔██║█████╗__██║__██║██║███████║_________<br>
+			██║___██║██╔══╝______██║╚██╗██║██╔══╝__██║███╗██║____██║╚██╔╝██║██╔══╝__██║__██║██║██╔══██║_________<br>
+			╚██████╔╝██║_________██║_╚████║███████╗╚███╔███╔╝____██║_╚═╝_██║███████╗██████╔╝██║██║__██║_________<br>
+			_╚═════╝_╚═╝_________╚═╝__╚═══╝╚══════╝_╚══╝╚══╝_____╚═╝_____╚═╝╚══════╝╚═════╝_╚═╝╚═╝__╚═╝_________<br>
+			____________________________________________________________________________________________________<br>
+		</div>
+
+		<content>
+			<text id="ch-1" >
+				<subtitle><br> A brief history of graphic design </subtitle>
+				During its very short official history, the field of graphic design has been extensively documented as it has evolved. Although graphic design-like activities, according to some <a id="ref-1" href="#1"></a>, date back to the first cave painting, the term was only coined in the beginning of the 20th century. It first appeared in print in the 1922 essay <i>New Kind of Printing Calls for New Design</i>  by William Addison Dwiggins, an American book designer. <a id="ref-2" href="#2"></a> In graphic design, “the essence is to give order to information, form to ideas, expression and feeling to artefacts that document human experience.” <a id="ref-3" href="#3"></a> 
+					<br><table></table>Traditional forms of graphic design relied strongly on graphic printmaking techniques as a medium, from which the initial name derived as well. Typography, way-finding systems, symbols and printed matter such as books and posters were the most typical works of a designer up to the late 20th century. Classic instances of traditional 20th century graphic design are the signage in the London Underground by Beck and Johnston <a id="ref-4" href="#4"></a> <a id="ref-5" href="#5"></a> and Die Neue Typographie of Jan Tschichold <a id="ref-6" href="#6"></a>. 
+					
+				<subtitle><br><br>A new discipline</subtitle>
+				<br>Towards the mid-80s, the computer became an affordable item and thus more accessible. <a id="ref-7" href="#7"></a> The graphic interface visually made the use of computers more easily accessible for the purposes of creating documents. This type of interface has been an important feature of many personal computers ever since, and is called WYSIWYG, a really long acronym for What You See Is What You Get. WYSIWYG is in fact a polished interface between a non-programmer and the computer, and gets its name from the result of the finished product: if you would print or display a page from a WYSIWYG editor, it would display just the same. 
+					
+<section class="inline-section">
+	<div class="part-title">Type in the editor:</div><div class="part-title">Your custom WYSIWYG outcome:</div>	
+	<div class="code-block">
+		<pre class="test-code"><code contenteditable class="code hljs html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>    
+	<span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span> 
+	<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The "Hello, world!" phrase is often used by programmers to check if a program works. (Bonus: it also is the title of the first full composition ever created by an artificial intelligence.)<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span> 
+   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</span></code></pre>
+		<div class="code-view"></div>
+	</div>	
+</section>
+
+					<br>Before the appearance of WYSIWYG, text on screen appeared in the standard system typeface—usually a monospaced font that would be made to display code—without much styling, making it hard to see the final visual outcome. If one was laying out a text, control codes had to be applied to make text bold, italic or underlined, to change the typeface or the size. <a id="ref-8" href="#8"></a> That made the process of setting text digitally a painful hassle. On top of that each application had its own special way of text formatting, which made switching from one word processor to another something to be avoided. WYSIWYG made operating a computer much more enjoyable. Computers like the Apple Macintosh system even had a screen resolution that was designed to be compatible with the Apple printers of those days,—dot-matrix printers—, making the printing process faster. The image on the screen would be exactly the same size as the printed version, but with a higher resolution. <a id="ref-9" href="#9"></a> The improvement of the graphic user interface of computers resulted in effortless navigation for people without too much technical knowledge—which had a significant effect on many creative practices, including graphic design. 
+					<br><table></table>Many disciplines in the West were affected as a result of this innovation. The change of tools made for a change of trade. Graphic design programs often came installed on the computer, but sometimes had to be purchased separately. Programs like Netscape Composer, Quark Express and later Adobe Illustrator, inDesign and Photoshop slowly became the norm in the field. <a id="ref-10" href="#10"></a>  Whereas graphic design had before relied on printmaking techniques, craftsmanship and skills, it could now be done by anybody who owned a personal desktop computer. This seemed to put traditionally educated, professional graphic designers in an uncomfortable position. In 2007, Art Chantry, a designer that worked most in the 1980s, <a id="ref-11" href="#11"></a>  explained the new situation: 
+
+					<quote>“It’s never been easier to be a graphic designer: all you have to do is buy the software. But at the same time, it’s never been tougher because now everybody is a graphic designer and, for people like me it’s difficult to get work processed. It’s very frustrating. I think computers are both a good and a bad thing. Ultimately computers are going to be where the next source of amateurism and ideas come from. It is the only venue left for DIY at this point. Anybody can access a computer and build their own websites and put their shit in there and it’s all Do It Yourself. It’s too expensive to get things printed other ways now—even Kinko’s [a printer, ed.] is too fucking expensive—it’s cheaper to do it on a computer. That’s where the communication source is and that’s where the next big underground culture is going to emerge, there’s just no other option. But at the same time, it has caused enormous problems for people like me.” </quote>
+
+					<br>Chantry argued that the arrival of the computers caused a number of complications for the professional designer. First of all, with these new tools, everybody thought they could be a designer, which caused issues for people that had studied for years, but then had to compete with a bunch of uneducated—potentially colour blind—computer nerds. On top of that, all these new designers produced an overload of amateurish design that polluted digital media and platforms. Finally, physical printing gradually became more and more expensive a medium compared to displaying the same information on-screen. Of course, for anyone who had had a career creating tangible, printed posters, this development was quite disastrous. Both Chantry’s favourite tools and media had become obsolete. The position that he took is comprehensively justifiable, but nobody seemed to care. 
+					<br><table></table>On the opposite side of the spectrum of possible reactions to the development of digital media and tools, some have a nearly utopian, ultra-positive view on the role of the graphic designer in the digital era. 
+					<br><table></table>Jeff Gomez, for instance, predicts  a new future in his book <i>Print is dead</i>. <a id="ref-12" href="#12"></a> Gomez explains that apart from the people that go to the cinema for movies, hunt for CDs or cassettes in record stores to listen to music, or buy physical books, there is a phenomenon called <i>Generation Download</i>. Generation Download has no need to rummage the pages of a book for content, because they can do this through software and websites on their computer. With their headphones always plugged into at least one of their ears, their hand glued to their phones and always within the radius of WiFi reception, there is no need to leave the house to <i>experience</i>; they are in their own digital world. Gomez seems to ignore that this occurrence is not omnipresent in that generation, or that people just prefer books for the qualities they have over digital media. He says this change is the first truly transformational thing to happen in the world of words since the printing press. Therefore he incites authors, designers, distributors and readers to not only acknowledge these changes in perception, but to focus on digital creation primarily.
+					<br><table></table>A more neutral proponent of new media and tools is Alessandro Ludovico. He published a book and website named <i>Post Digital Print</i>,  in which he tries to answer the question of how digital and analogue will coexist <a id="ref-13" href="#13"></a>. He shows the example of the existence of television next to the computer: its popularity may have decreased compared to the 70s, but many still have one in there homes. The same goes for radios, newspapers, printed magazines, and text messages—none of these media have ever really disappeared. They certainly evolved, were adapted to new circumstances, surrendered some of their popularity, but they have not disappeared. Ludovico feels that the death of print is an almost ideological question that surpasses the real value of publishing. To him “One of the strongest values of publishing is to develop content that can serve a community and preserve its values, intellectual elaborations and history”. Instead of opposing analogue and digital media, we should rather explore how the two can enhance each other. The difference of the media revolution is that digital media do not <i>compete</i> with other media—they swallow them and remediate them in its own form. Software has come to contain everything, images, sound, radio, movies ...
+					Designers could learn from Ludovico’s perspective on media that the goal is not one medium <i>winning</i>, but rather media finding a way of functioning next to each other and strengthening each other. In the end, graphic design essentially “... gives order to information”, <a id="ref-14" href="#14"></a>  no matter what medium is involved. Its significance lies in translating raw content—whether a written manuscript or a database—into an understandable form.
+					<br><table></table>Lev Manovich, a media author from Moscow, has a similar opinion on the liquidity of content. In his book <i>Software Takes Command</i>, <a id="ref-15" href="#15"></a> he argues: 
+
+					<quote>'There is no such thing as <i>digital media.</i> There is only software—as applied to media (or <i>content</i>). Or, to put this differently: for users who only interact with media content through application software, the 'properties' of digital media are defined by the particular software as opposed to solely being contained in the actual content (i.e., inside digital files). </quote>
+
+					<br>Manovich here states that software is the medium that is used to give form to digital content, not the content itself. The content adapts to the digital software. This idea is similar to the phrase of academic and media theorist Marshall McLuhan <i>The medium is the message</i>. <a id="ref-16" href="#16"></a> The medium essentially embeds itself in the significance of the content by influencing how this content is perceived. This impact of media differs per instance and can be actively used by designers to play with the scale and form of human association and interaction.
+					<br><table></table>As a result of this shifting role of the medium, hybrid forms of media treatment appeared. This also had an impact on the role and attitude of the designer. 
+
+					<subtitle><br><br>The Unicorn myth</subtitle>
+					<br>Now that everyone is a designer, somehow all kinds of disciplines are added to an interdisciplinary melting pot. Nowadays, real designers are Authors that do Research. They are Socially Responsible, they see their Process as design, and they think designing Rules is design--and Systems too. Designers are the Saviours Of the Modern World. Designers are Programmers. Traditional boundaries are breaking while new ones are building up.
+					<br><table></table>What caused this discipline transformation? Designers seem to be in an identity crisis and to try and find new multidisciplinary niches to distinguish themselves from the vast amount of colleagues. Everybody seems to want the <i>Rainbow Unicorn</i>. You know: a designer that can design, program, communicate and bake red velvet cupcakes simultaneously. Rainbow unicorns are people that can craft hand-bound books with customary hand-marbled paper and handmade letterset bookmarks (hand is the essential word here), all the while developing a program that can scrape large amounts of data about kittens off the web. 
+					<br><table></table>Around 2011, American designer / developer Braden Kowitz wrote an article why designers should not be developers—paradoxically, he is both himself—and baptised the persona unicorn. <a id="ref-17" href="#17"></a>  This person is called a unicorn for two reasons: first of all, for its magical superpowers, secondly because it is a mythical creature of which the story has been widely spread, but which nobody has ever seen. 
+					<br><table></table>“Some people can play the piano and the banjo, but when they play them both at once it sounds really crappy”, says designer Roger Belveal. <a id="ref-18" href="#18"></a> The argument goes that one is better off being great at one thing,—a <i>specialist</i>—than mediocre at many—a <i>Jack of all trades</i>. Proponents state that professionalism equals ability to stay focused on one thing. For a successful outcome, people with different perspectives are needed, they can work together and stay focused on their greatest strengths. 
+					Taken for granted in this concept of collaboration between designer and programmer is the productive performance of the process, the readiness of the company to pay two wages for one job and the notion of the two not getting to the point of smashing their laptops to pieces on each other’s heads. In order to be able to communicate, it is useful to have a common ground of communication. “A unified process often is more structured, less inconsistent and finished faster.”, states American designer David Cole. <a id="ref-19" href="#19"></a>
+					<br><table></table>However, design already is not a single skill. There are so many techniques, programs in and so many approaches to the field that it is hard to describe what design actually is to an outsider. Why is programming thus rejected in such a way? The combination of multiple skills can intensify both. A great example of combination of skills is DrawBot, <a id="ref-20" href="#20"></a> a tool for visuals based on the programming language Python, created by Just van Rossum, Erik van Blokland and Frederik Berlaen. As a professor at the Royal Academy of The Hague, Van Rossum teaches Python to graphic design and Type&Media students using DrawBot as interface. <a id="ref-21" href="#21"></a> Since the classes have typography as subject, student projects often result in dynamic typefaces or letterforms that could never be made with typographic craftsmanship only. 
+
+				<subtitle><br><br>Cognition	</subtitle>
+				<br>Learning is not a scale activity. By writing JavaScript, one does not suddenly forget how to kern type. The statement that learning multiple tasks results in a mediocre performance of all, disregards this as well as the fact that lifelong learning is not a disposition that everybody enjoys. 
+				<br><table></table>Humans begin learning at birth and continue to do so throughout life, but how much is learned and the value of the acquired knowledge varies per individual. <a id="ref-22" href="#22"></a> However, from the age of 25, human ability to learn declines with about 1% per year. <a id="ref-23" href="#23"></a> Whereas programming has more and more frequently become a part of the primary school educational curriculum, this was rarely the case before 2012. <a id="ref-24" href="#24"></a> The generation of the late 80s and 90s is in an interesting position; they have not been taught programming as a basis of their education, yet got in contact with the discipline in their teenage years or twenties. Current design students often have learned design practice before programming and have to bridge a gap between a generation that mainly worked without the use of programming and a generation where programming is a part of their primary knowledge.
+					<br><table></table>Andragogy is a theory about lifelong learning, coined by German educator Alexander Kapp in 1833. It derives from the Greek ανδρός (man) and αγω (to lead). In 1968, American educator Malcolm Knowles juxtaposed andragogy to <i>taught</i> learning as a term for <i>self-direction</i>. Self-directed cognition, Knowles states, can only take place as a sum of an individual’s inner desire to learn, the relation of the matter to one’s daily life and previous experiences. It is best executed in an informal environment with a certain guidance and a direct possibility for practical application, learning by doing. <a id="ref-25" href="#25"></a> Due to all these conditions, it is sooner an exception than the rule that schooled adults learn a new practice. It rarely happens that extra time is actually spent with such a practical activity as learning programming, if inner motivation is missing. Yet, one does not un-learn by learning new practices. 
+
+				<subtitle><br><br>Redefining craftsmanship</subtitle>
+				Nevertheless, there are similarities between the programming and design disciplines. Both are seen by some as a craft. A craft is an occupation or trade requiring manual dexterity and skills. <a id="ref-26" href="#26"></a> Originally, this would apply to manual crafts, a craftsman would originally be <i>a member of a craft guild</i>, which were groups of carpenters, printers or painters.
+				<br><table></table>But with the rise of new media, <i>manual</i> lost its value. The term craftsmanship was appropriated by The Software Craftsmanship Manifesto, <a id="ref-27" href="#27"></a> who made a metaphorical comparison between modern software development and the apprenticeship model of these guilds, where younger apprentices would learn from their masters and take over the business when the time was ripe. Creating a piece of software demands skills, structure and attention to detail just as much as creating a well-designed book does. Even the design principles work similarly, although the approach might be different, interfaces need a similar treatment, where text hierarchy, balance and white space play an important role. Programming is a craft, too.
+					<br><table></table>In 2001 Ben Fry and Casey Reas, two PhD students at the Massachusetts Institute of Technology,  developed Processing, <a id="ref-28" href="#28"></a> an open source programming language especially for design, electronic arts and new media art, with the purpose of teaching fundamentals of programming in a visual manner. Over the years, Processing has gained vast amounts of popularity. The current possibilities are endless. One can do anything from drawing a circle to making a complex 3D model of a record with your favourite song. By bridging visual arts, design and programming, Processing is an artistic expression of digital craftsmanship.
+			</text>
+			<references> 
+					<div class="reference ch-1" href="#ref-1" id="1"> Ruspoli, M. and Coppens, Y. (1987),<i> The Cave of Lascaux</i>. New York: Harry N. Abrams.</div>
+
+					<div class="reference ch-1" href="#ref-2" id="2"> Drucker, J. and McVarish, E. (2009), <i>Graphic Design History: A critical Guide</i>. Amsterdam: Pearson Education.</div>
+
+					<div class="reference ch-1" href="#ref-3" id="3"> Meggs, P. (1983), <i>A history of graphic design</i>. New York: Van Nostrand Reinhold.</div>
+
+					<div class="reference ch-1" href="#ref-4" id="4">  Interview Frank Pick, Design Patron (1878-1941), Designing Modern Britain - Design Museum, 26 November 2006.</div>
+
+					<div class="reference ch-1" href="#ref-5" id="5"> Murphy, D., <i>Edward Johnston is an Underground hero for his democratic typeface</i>,  <a href='http://www.theguardian.com/commentisfree/2013/jul/29/edward-johnston-underground-typeface-modernist-design' target='_blank'>http://www.theguardian.com/commentisfree/2013/jul/29/edward-johnston-underground-typeface-modernist-design</a>, consulted on December 12, 2015.</div>
+
+					<div class="reference ch-1" href="#ref-6" id="6"> Airey, D., <i>Graphic Icons: Jan Tschichold</i>. <a href='http://www.davidairey.com/graphic-icons-jan-tschichold/' target='_blank'>http://www.davidairey.com/graphic-icons-jan-tschichold/</a>, consulted on December 12, 2015.</div>
+
+					<div class="reference ch-1" href="#ref-7" id="7"> Hesmondhalgh, D. (2013), <i>The Cultural Industries</i>. London: Sage Publications Ltd.</div>
+
+					<div class="reference ch-1" href="#ref-8" id="8"> Howe, D. (1999). <i>What You See Is What You Get</i>, <a href='http://foldoc.org/WYSIWYG' target='_blank'>http://foldoc.org/WYSIWYG</a>, consulted on January 7 2016.</div>
+
+					<div class="reference ch-1" href="#ref-9" id="9"> Gruber, J., <a href="http://daringfireball.net/2012/08/pixel_perfect">Pixel Perfect</a>,  consulted on January 7 2016.</div>
+
+					<div class="reference ch-1" href="#ref-10" id="10">  Bloomer, P. (2014),  <i>How New Technologies Are Changing Typography: The Breaking of the Tyranny of Arial</i>. Quinnipiac University, USA.</div>
+
+					<div class="reference ch-1" href="#ref-11" id="11"> Sinker, D. (2007), <i>We Owe You Nothing: Expanded Edition: Punk Planet: The Collected Interviews</i>, p. 212</div>
+
+					<div class="reference ch-1" href="#ref-12" id="12"> Gomez, J. (2007), <i>Print Is Dead: Books in our Digital Age</i>. New York: Palgrave Macmillan.</div>
+
+					<div class="reference ch-1" href="#ref-13" id="13"> Ludovico, A. (2012), <i>Post Digital Print</i>, Monoskop. (online version: <a href='http://monoskop.org/images/a/a6/Ludovico%2C_Alessandro_-_Post-Digital_Print._The_Mutation_of_Publishing_Since_1894.pdf' target='_blank'>http://monoskop.org/</a>, consulted on December 24th, 2015.) </div>
+
+					<div class="reference ch-1" href="#ref-14" id="14"> Meggs, Philip B. (1983), <i>A history of graphic design</i>. New York: Van Nostrand Reinhold.</div>
+
+					<div class="reference ch-1" href="#ref-15" id="15"> Manovich, L. (2013), <i>Software Takes Command</i>, New York: Bloomsbury Academic.</div>
+
+					<div class="reference ch-1" href="#ref-16" id="16"> McLuhan, M. (1967), <i>The Medium is the Massage</i>, London: Penguin Books.</div>
+
+					<div class="reference ch-1" href="#ref-17" id="17"> Kowitz, B., <i>Hiring a designer: hunting the unicorn</i>, <a href='https://library.gv.com/' target='_blank'>https://library.gv.com/</a>, consulted on February 27, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-18" id="18"> Treder, M., <i>Should Designers Code?</i>,  <a href='https://studio.uxpin.com/blog/should-designers-code/' target='_blank'>https://studio.uxpin.com/blog/should-designers-code/</a>, consulted on February 27, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-19" id="19"> Cole, D. <i>The Myth Of The Myth Of The Unicorn Designer</i>, consulted on February 26, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-20" id="20"> No Author, <i>DrawBot</i>, <a href='http://www.drawbot.com/' target='_blank'>http://www.drawbot.com/</a>, consulted on October 21, 2015.</div>
+
+					<div class="reference ch-1" href="#ref-21" id="21"> Just van Rossum, <i>Daily DrawBot</i>. February 11, 2016, Stroom, Den Haag.</div>
+
+					<div class="reference ch-1" href="#ref-22" id="22"> Crawford, D. (2004): </i>The Role of Aging in Adult Learning: Implications for Instructors in Higher Education</i>. Baltimore: John Hopkins University. </div>
+
+					<div class="reference ch-1" href="#ref-23" id="23"> Raz, N. and Rodrigue, K. (2006), "Differential aging of the brain: Patterns, cognitive correlates and modifiers".  </i>Neuroscience & Biobehavioral Reviews Vol. 30, Issue 6</i>, 2006, p. 730–748.</div>
+
+					<div class="reference ch-1" href="#ref-24" id="24"> BBC board, <i>Schools Computing</i> , <a href='http://www.bbc.co.uk/schools/0/computing/' target='_blank'>http://www.bbc.co.uk/schools/0/computing/</a>, consulted on January 24, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-25" id="25"> Knowles, M. "Andragogy" <a href='http://academic.regis.edu/ed205/knowles.pdf' target='_blank'>http://academic.regis.edu/ed205/knowles.pdf</a>, consulted on January 24, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-26" id="26"> No Author, <i>Definition of "Craft"</i>, <a href='http://www.merriam-webster.com/dictionary/craft' target='_blank'>http://www.merriam-webster.com/dictionary/craft</a>, Last consulted on January 29, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-27" id="27"> 'The undersigned', <i>Manifesto for Software Craftsmanship</i>, <a href='http://manifesto.softwarecraftsmanship.org/' target='_blank'>http://manifesto.softwarecraftsmanship.org/</a>, consulted on January 29, 2016.</div>
+
+					<div class="reference ch-1" href="#ref-28" id="28"> No Author, <i>Processing</i>, <a href='https://processing.org/' target='_blank'>https://processing.org/</a>, consulted on January 4, 2016.</div>
+			</references>
+			<images> 
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/dwiggings.jpg" longdesc="http://giam.typepad.com/100_years_of_illustration/2007/09/william-a-dwigg.html">
+					<div class="image-text">
+						 William Addison Dwiggins at 75 years.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/wad_electra_1934.gif" longdesc="http://giam.typepad.com/100_years_of_illustration/2007/09/william-a-dwigg.html">
+					<div class="image-text">
+						<i> Electra</i>, a typeface designed by William Addison Dwiggins and introduced in 1934.  
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/harry-beck-underground.jpg" longdesc="http://estore.eclipse.net.uk/WebRoot/Eclipse/Shops/238929/4C20/937C/8035/ABA7/69C8/5299/FE62/7547/beck1933_002.jpg">
+					<div class="image-text"> 
+						<i> The London Underground</i>, Harry Beck (1933).
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/underground.jpg" longdesc="http://www.ianvisits.co.uk/blog/wp-content/uploads/2016/01/slideshow1_2454615k.jpg">
+					<div class="image-text">
+						<i> Johnston</i>, typeface designed by Edward Johnston (1933).
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/jan_tschichold.jpg">
+					<div class="image-text">
+						<i> Die Neue Typographie</i>, Jan Tschichold (1927).
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/bell-2.jpg" longdesc="http://www.theguardian.com/technology/gallery/2016/feb/13/future-women-the-bell-lab-computer-operators-of-the-1960s-in-pictures-women-in-computing">
+					<div class="image-text">
+						At the <i> Bell</i> Lab in 1964, the newest technology was this IBM mainframe computer: 1MB of memory, 648MB of hard drives, no video, and it was worth millions of dollars.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/xerox-star.jpg" longdesc="https://blog.adafruit.com/wp-content/uploads/2009/08/xerox-star-8010-04.jpg" longdesc="">
+					<div class="image-text">
+						An early version of a WYSIWYG display: the<i>  Xerox Star 8010</i> interface (1981).
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/apple.gif" longdesc="http://www.marvinjdesign.com/geocaching/Printout.gif">
+					<div class="image-text">
+						The pixelated outcome of an Apple dot-matrix printer.  
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/quarkxpress_4_11_classic.gif" longdesc="http://www.prometheo.it/corsi/quarkxpress/images/xpress2.jpg">
+					<div class="image-text">
+					QuarkExpress 4 icon.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/chantry.jpg" longdesc="http://www.spd.org/2015/03/interview-art-chantry.php">
+					<div class="image-text">
+						<i> Rollercoon  </i>affiche, Art Chantry (2009).
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/chantry-2.jpg" longdesc="http://www.spd.org/2015/03/interview-art-chantry.php">
+					<div class="image-text">
+						<i> 'Educational'  </i> poster, Art Chantry (1993).
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/gomez.jpg" longdesc="http://i1181.photobucket.com/albums/x422/neon_goat/books%20covers/PrintIsDead.jpg">
+					<div class="image-text">
+						<i> Print is Dead  </i> cover, Jeff Gomez.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-1/ludovico.jpg" longdesc="http://neural.it/wp-content/uploads/2013/08/AlessandroLudovico_PostDigitalPrint1.jpg">
+					<div class="image-text">
+						<i> Post Digital Print  </i>, Alessandro Ludovico. The physical book has a cover that irrevocably becomes covered with traces of fingerprints when touched.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/mc-luhan.jpg" longdesc="https://jmunney.files.wordpress.com/2015/06/mcluhan.jpg">
+					<div class="image-text">
+						Marshall McLuhan. Photo: Henri Daumain, for Life Magazine, Courtesy of The Estate of Marshall McLuhan.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/unicorn.jpg" longdesc="https://upload.wikimedia.org/wikipedia/commons/7/70/Oftheunicorn.jpg">
+					<div class="image-text">
+						A unicorn originally is a mythological creature that looks like a horse with a horn on its head.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/printingpress.jpg" longdesc="http://bi9he1w7hz8qbnm2zl0hd171.wpengine.netdna-cdn.com/wp-content/uploads/2014/08/benjamin-franklins-printing-press-science-source.jpg">
+					<div class="image-text">
+						Illustration of the Gutenberg printing press.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-1/silkscreen.png" longdesc="http://www.artrepublic.com/attachments/image/579/31579/31579_600x250_c.png">
+					<div class="image-text">
+						Silkscreen.
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-1/playtype.jpg" longdesc="https://playtype.com/sites/all/themes/playtype2/pictures/sketches-002.jpg">
+					<div class="image-text">
+						Type design. Sketch made by Danish studio Play Type. 
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/drawbot.png" longdesc="http://www.drawbot.com/">
+					<div class="image-text">
+						DrawBot icon.
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/drawbot.jpg" longdesc="https://playtype.com/sites/all/themes/playtype2/pictures/sketches-002.jpg">
+					<div class="image-text">
+						Type design with DrawBot, image by TypoMad.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/drawbot-2.jpg" longdesc="http://portfolio.sveinbjorn.com/367441/5191219/type-and-letters/other-type-and-lettering-work">
+					<div class="image-text">
+						Type design with DrawBot by Sveinbjörn Pálsson.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/2016.gif" longdesc="https://s-media-cache-ak0.pinimg.com/originals/74/92/17/74921758d79f9f6dfa6a02e18deacf90.gif">
+					<div class="image-text">
+						Type design with DrawBot by Just van Rossum.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/knowles.jpg" longdesc="http://www.lifecircles-inc.com/Learningtheories/knowls_files/page88_1.jpg">
+					<div class="image-text">
+						Malcolm Knowles (1980).
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/guilds.jpg" longdesc="http://www.wired.com/wp-content/uploads/2014/09/social-guilds-ft1.jpg">
+					<div class="image-text">
+						Illustration of a medieval shoemakers' guild, from Das Ständebuch (The Book of Trades), 1568.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/processing.jpg" longdesc="https://forum.processing.org/two/discussions">
+					<div class="image-text">
+						Processing icon.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/processing.gif" longdesc="https://media.giphy.com/media/LEheDASL7GfRK/giphy.gif">
+					<div class="image-text">
+						Animation made with processing.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/processing-fabric.jpg" longdesc="https://forum.processing.org/two/discussions">
+					<div class="image-text">
+						<i> Fragmented Memory</i> is a triptych of large woven tapestries of binary computer data, Phillip Stearns (2013).
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-1/processing-record.jpg" longdesc="http://www.instructables.com/id/3D-Printed-Record/">
+					<div class="image-text">
+						A 3D printed record created with Processing by Amanda Ghassaei.
+					</div>
+				</div>
+
+			</images>
+		</content>
+	</chapter>
+
+	<chapter> 
+		<chapternumber> [0010] (2) chapter 2 </chapternumber>
+		<name id="Chapter2">A brave new world</name>
+		<content> 
+			<text id="ch-2">
+				<subtitle><br> Stay hungry, stay foolish </subtitle>
+				The first time humans went to the moon and made a photo of the whole earth from space, it was published in a magazine called </i>The Whole Earth Catalog</i>. In 1973 the very last page of the final issue of the magazine said ‘Stay Hungry, Stay Foolish’, with a picture of an early morning country road. <a id="ref-29" href="#29"></a> The almost proverbial sentence is an ode to human curiosity. It can literally be associated with a hungry human, looking for new means to feed himself in order to survive. 
+				<br><table></table><i>Stay Hungry</i> relates to humans’ instinctive response to craving. Metaphorically, it refers to a craving for something other than nutritious goods. It hints at the inner motivation to hunt, to search, to exceed; to never be satisfied and always look for more. The second part, <i>... Stay Foolish</i>, is an allusion to impulsiveness and rejection of logical advice. Foolishness is the mindset of the <i>Homo Ludens</i>, an image of man as a playing being formulated by Dutch historian Johan Huizinga. <a id="ref-30" href="#30"></a> The Homo Ludens is a being free from worries, who is always playing and enjoying his life. Huizinga argues that everything that we name ‘culture’ comes from play, and develops as such. Once play becomes suppressed, culture cannot grow. Reward, freedom and satisfaction of primary needs of the self are the most important basis to maintain play and thus a flourishing culture. According to Huizinga, play stimulates culture.
+					<br><table></table><i>Stay Hungry, Stay Foolish</i> was once referred to by Apple CEO Steve Jobs in a 2005 speech at Stanford University, USA. Apple is known as a company that combines technology with smooth design and simplicity, and Steve Jobs was Apple’s guru. Although he was referring to <a id="ref-31" href="#31"></a> <a id="ref-32" href="#32"></a> the first appearance of the metaphor, it often was mainly attributed to him and Apple.  <a id="ref-33" href="#33"></a> <a id="ref-34" href="#34"></a> <a id="ref-35" href="#35"></a>
+					Innovation is the genesis of a new, more apt idea, product or process. <a id="ref-36" href="#36"></a> Apple is an innovative company because they effectively market the products they bring out in a combination of components that has never been done, resulting in immense acclaim of the brand. In a way, Steve Jobs made a link between “Stay Hungry, Stay Foolish”, his company and innovation. <a id="ref-37" href="#37"></a> However, before becoming the innovative leader of Apple as a centrepiece of the Silicon Valley dream, Steve Jobs was part of a completely different kind of community. He was a hacker. 
+
+				<subtitle><br>A brief history of hacking </subtitle>
+				If you think about a hacker, you probably envision a Hollywoodesque image of a pale nerd wearing a smudgy hoody and sitting in a dark, dirty, cave surrounded with zooming processors and blinking LEDs. I know you do. 
+				<br><table></table>And that’s fine, because it is a commonly known form of hacking. However, the verb “to hack” means so much more than breaking into computer systems. As used as “hacking” a system, the word we know derives from a verb that first appeared in English around the 13th century, meaning, “cutting with heavy blows in an irregular or random fashion <a id="ref-38" href="#38"></a>”. Another possible definition of the word comes from “hackney” – a horse or car for rent –, referring to somebody who does unimportant work. <a id="ref-39" href="#39"></a> Hackney also signifies a pastoral area nearby London, where horses were kept. <a id="ref-40" href="#40"></a>
+					<br><table></table>The first appearance where “hack” was connoted to messing around with machines was at MIT in April 1955. In the minutes was written, “Mr. Eccles requests that anyone working or hacking on the electrical system turn the power off to avoid fuse blowing.” <a id="ref-41" href="#41"></a>
+					The MIT being an influential institute around that time <a id="ref-42" href="#42"></a>, the ‘hacking’ gained popularity of its use at the institute in the mid-20th century. Its significance initially non-technological, the students used the word to say “mischief pulled off under a cloak of secrecy or misdirection”. <a id="ref-43" href="#43"></a> It was a term applied to the pranks that MIT students pulled. 
+					<br><table></table>A traditional MIT prank from the early 1930s was executed by Ken Wadleigh and four others. By distracting the conductor and setting off thermite bombs, they welded a Massachusetts street trolley to its metal rails. <a id="ref-44" href="#44"></a> The computer clubs at the Institute used the word to praise a member for a successful alteration that he had made in an existing system. “Hacker” was a positive term for somebody with great skills, who could push programs beyond what they were designed to do. Richard Stallman, a significant figure for open source technology, defines hacking as “Playfully doing something difficult.” 
+
+				<subtitle><br>The hacker ethic</subtitle>
+				<br>In the 1960s two members of Homebrew Computer Club in California started developing something that they called “blue boxes”. These blue boxes secretly were devices used to hack into the phone system. The members, who identified with the code names “Berkeley Blue” (Steve Jobs) and “Oak Toebark” (Steve Wozniak), later went on to found Apple Computer. Oak Toebark,—Wozniak for acquaintances, or ‘one of the people who built the first personal computer’ for others—claimed that “the computer itself is entertainment”, and explained how a considerable amount of features of the Apple computer came from one of the games they developed. The majority of fun features that were built in had only a function in one of their projects, which was to program a game called ‘Breakout’ and show it off to their friends. <a id="ref-45" href="#45"></a> Steve (the Oak one) saw the programming experimentation he did as some sort of game. It is not an uncommon perspective in the hacking culture: for many people it is a joyful, exciting exploration. Solving computational problems arouses a strong feeling of curiosity in the hacker and makes him (or her) thirsty for more. To find the limitations of the system and to exceed them is a true adventure. When Sarah Flannery, an Irish hacker, was sixteen, she described her work on the “Cayley-Purser” encryption algorithm: “I had a great feeling of excitement... Worked constantly for whole days on end, and it was exhilarating. There were times when I never wanted to stop.” <a id="ref-46" href="#46"></a> Many hackers are known to not sleep or eat for full days because of their fascination.  
+
+				<subtitle><br>Open source movement</subtitle>
+				The term “open source” in connection with software was first proposed by Christine Peterson, American nanotechnologist and a member of the Free Software Movement (FSM). <a id="ref-47" href="#47"></a> Founded in 1983 by Richard Stallman, the FSM has the goal to obtain and guarantee certain freedoms of software, namely the freedom to run it, to study and change it, and to redistribute copies of it. <a id="ref-48" href="#48"></a> Previously Stallman had created an operating system and free software movement called GNU, the name of which is a recursive acronym meaning <i>GNU’s Not Unix</i>: it is both a tribute to the operating system Unix and shows that GNU is something more, namely freedom. <a id="ref-49" href="#49"></a> The movements’ philosophy is that the use of computers should not lead to preventing people from cooperating with each other by software restrictions.
+					<br><table></table>Every reform movement has a lunatic fringe. <a id="ref-50" href="#50"></a> Whereas all views are ideological in the FSM, philosophies on software freedom differed, as well as terminology. Two fervent antagonists were Richard Stallman and Eric Raymond. <a id="ref-51" href="#51"></a>
+				<br><table></table>Stallman believes that proprietary software is legal, but immoral. Using proprietary software causes side-effects, makes people feel helpless and at the mercy of external companies. Free software—he makes a distinction between open source software and free software —is a natural consequence of the basic structure of information, computers and software, and is ultimately moral. Anybody can modify free software, share it and customise it. 	
+					<br><table></table>Raymond’s view is a bit less ideological as he states that proprietary software is not illegitimate, but economically problematic. The system of sharing Open Source software—for he is one of those people that make no distinction—can be legally strengthened with Copyleft licenses. Proprietary software is not immoral, but risky. <quote>“To do the Unix philosophy right, you have to be loyal to excellence. You have to believe that software is a craft worth all the intelligence and passion you can muster... Software design and implementation should be a joyous art, and a kind of high-level play. If this attitude seems preposterous or vaguely embarrassing to you, stop and think; ask yourself what you’ve forgotten. Why do you design software instead of doing something else to make money or pass the time? You must have thought software was worthy of your passions once...”</quote> <a id="ref-52" href="#52"></a> <br>This states exactly what the hacker ethic and open source is about. Hackers are serious about their play and what they are playing with, too. <a id="ref-53" href="#53"></a> They want to bring their project to a higher level, want to share, and need to think beyond the limitations put on them. Hackers create the possibility of new things entering the world, McKenzie Wark states in his Hacker Manifesto. <a id="ref-54" href="#54"></a> Open source is their software ideology.
+
+				<subtitle><br>Open design </subtitle>
+				<br>In 1998 Dr. Sepehr Kiani, a mechanical engineer at MIT, realised that the structure of open source could be beneficial for designers too. Together with his colleagues Dr. Ryan Vallance and Dr. Samir Nayfeh, he set up an Open Design Definition. <a id="ref-55" href="#55"></a> It contains guidelines for free (re)distribution, inclusion of a design documentation, modification and derived works. Around the same time that Dr. Kiani came up with the idea, Reinoud Lambers of the TU Delft launched his <i>Open Design Circuits</i> website, where he proposed a hardware design community in the spirit of free software. <a id="ref-56" href="#56"></a> “Open Design” as a name was coined by Israeli designer Ronen Kadushin in his 2004 thesis, and the term was formalised in his 2010 Open Design Manifesto. <a id="ref-57" href="#57"></a> It officially means a form of co-creation where users contribute to the design of the final product, rather than a private company. 
+					<br><table></table>This envisions that everybody, also non-designers, can use and contribute to a project. It is a system for the development of physical products, machines and systems through the use of publicly shared design information. <a id="ref-58" href="#58"></a> Generally, it functions by the same principles as the open source movement. 
+					<br><table></table>The phenomenon of open source software and design is related to a much wider societal development. The sharing economy, peer-production (also known as crowd sourcing or mass collaboration) and other proposals of post-capitalistic systems seem to become cultural dominants. <a id="ref-59" href="#59"></a> The popularity of these models over more traditional ones offers a perspective on a likely architecture of society in the future.
+					In the design realm, both concepts of distribution seem to be successful. Both ‘opens’ have a different effect on the working methodology of the designer. Open source allows a designer to build on the shoulders of giants—being able to use pieces of code as a basis, save time and educate—however, a basic programming knowledge is definitely needed. Open design attempts to break the exclusivity of the design field and opening it up to anybody with a computer. 
+					<br><table></table>An example of an open design project is The Free Universal Construction Kit of Golan Levin, a new media artist and professor at the Carnegie Mellon University, USA. <a id="ref-60" href="#60"></a> <a id="ref-61" href="#61"></a> While building a toy car with his child, his skilfully engineered Lego components did not match the K’nexx ones, which made him extremely furious. The blocks of each brand were designed to the millimetre to fit their own brand, but the systems of connection wouldn’t fit on any other. He recognised that the standardisation of these building toys offered the solution at the same time. Levin designed and printed 3D blocks fitting the block of one brand at the left and another at the right side, which functioned so well that he created connectors for a load of other toy brands too. He even created a universal component, The Universal Adapter Brick, which is capable of fitting 16 brands of building toys to each other. He open-sourced the designs, so that people anywhere can access them and have less frustration while building. Levin argues that all artistic work should be open sourced, since culture is a dialogue where the one responds to the other. <a id="ref-62" href="#62"></a>
+					<br><table></table>Sharing makes it much easier to create something that is beyond the limitations of the designer’s power and influence—since it is in reality made by more than one person. This raises questions of authorship: who is the person who is formally making a work?
+
+				<subtitle><br>Copy Right </subtitle>
+				<br>Ownership in the design realm is an intricate issue. Graphic design was never a discipline of mechanic innovation and thus cannot be patented. Other options to protect a work are copyright and trademark licenses. Copyright protects the original expression of ideas, but not the ideas themselves. <a id="ref-63" href="#63"></a> It is possible to Trademark a smell, letter, number slogan, logo or a combination of these, but not an idea. If there were a distinction between the form (style) and the idea (concept) of the identity of a product, instances of design seem to not be legally recognised as a mode of production that results in original creation. <a id="ref-64" href="#64"></a> A design concept is thus not protected by law and could not be, since functional design should be able to communicate the concept to the public. 
+					<br><table></table>To hypothetically comprehend a design concept argues for the possibility of copying. It would be much harder to hypothetically comprehend the functioning of a mechanical engine, and furthermore its functionality does not include its complete comprehension. For a designer, the step to open source a design is thus a more obvious one, because design already was open in the way that information is shared, even from the perspective of jurisdiction. The designer can be the author, but never the owner.
+					Nonetheless, to allow the public to freely copy an exact work makes it even easier to reproduce, and this is what open design pursues. The authorship in traditional design makes room for collaborative forms of creation, where copyright is irrelevant.
+
+				<subtitle><br>Copy Left</subtitle><br>
+				With open design, new models of property licensing develop. Open source code or software falls under a larger category of software that is called freeware, types of software that are free. <a id="ref-65" href="#65"></a> Freeware licences do not cover the same properties as copyright licenses—on the contrary, for open source they often indicate the exact opposite. The licenses of open source fall under a category called Copyleft and permit the user to reproduce, adapt and distribute the work, as long as the work stays open source under the same license it started with. Copyleft licenses are a segment of the legal system of existing copyright laws, which order to secure the free availability of a work. <a id="ref-66" href="#66"></a> There are approximately 30 different models of Copyleft licenses, yet the GPL, Beerware, and the MIT License are used most often. <a id="ref-67" href="#67"></a>
+					<br><table></table>The GPL, GNU General Public License, was the first popular copyleft license, again created by Richard Stallman. <a id="ref-68" href="#68"></a> It states that a core of a program can be used as a library and included in a project without having to open up the code – though the owner encourages users to share anyway. If the user decides to make changes in the core, he needs to submit the changed code back to the owner. The GPL is often used as a reference of compatibility for other licenses. The Beerware license gives the user practically all possible freedom, but encourages him or her to buy the creator of the script a beer if they considered the software useful and happen to meet in real life—away from the keyboard. <a id="ref-69" href="#69"></a> <a id="ref-70" href="#70"></a> The MIT License gives one the right to deal with software without limitations—the software can even be sold—but the license has to be included. <a id="ref-71" href="#71"></a>
+					<br><table></table>Obviously, all the licenses mentioned above are constructed in response to copyright, and defend opposite norms. In a way, copyleft licenses are their own paradox: a legal disclaimer stating that content is entirely free and adaptable for anybody; to protect the content from being protected. They thus strongly bear the ideology of open source gurus like Stallman: that everything should be protected from the proprietary industry – who are in their eyes purely malicious. Regardless of their ideological stance, the open source movement can be seen as an incentive, a medium and an epitome of a shift away from the author as an individual, for it unites people around the world by accommodating their collaboration. According to the copyleft models, these forms of collaborations can shape whatever they want, as long as they cultivate openness.
+
+				<subtitle><br>Authorship of tools</subtitle>
+				<br>In his essay Who is the Author, Lev Manovich argues the following about collaboration of a designer and a piece of software: 
+
+				<quote>“The author sets up some general rules but s/he has no control over the concrete details of the work – these emerge as a result of the interactions of the rules. More generally, we can say that all authorship that uses electronic and computer tools is a collaboration between the author and these tools that make possible certain creative operations and certain ways of thinking while discouraging others. Of course humans have designed these tools, so it would be more precise to say that the author who uses electronic/ software tools engages in a dialog with the software designers.”</quote> <a id="ref-72" href="#72"></a>
+				<br>Manovich describes that an author that works with a piece of software engages in a form of collaboration with it that limits the authors potential and influence to a certain extent. Of course, the author sets the rules, but in the end the software—or tool —defines the concrete outcome. As software often is a one-way communication (the software communicates, the designer does not), it is not an equal form of collaboration. 
+				<br><table></table>Father John Culkin, SJ, a Professor of Communication at Fordham University in New York once said to his friend Marshall McLuhan: “We shape our tools and thereafter our tools shape us”. <a id="ref-73" href="#73"></a> Objects create a new environment, change the perspective on the world, and gradually become an extension of man. To approach computers from McLuhan’s perspective, the computer as a tool is an extension of the mind. By discovering the possibilities of a program, people can think of new types of ideas. Next to that, they can automate tasks to solve problems quicker. Our mindset changes according to what we work with.
+					<br><table></table>Following McLuhan’s’ way of thinking, digital product designer Wilson Miner explains how the 20th century in the USA  was largely defined by the car. <a id="ref-74" href="#74"></a> The car, as an extension of man, allowed people to travel further and faster. The infrastructure that was built around the car shaped the modern USA, with its suburban areas and transcontinental highways. Concurrently, oil platforms, factories and gas stations were constructed. The American car thus had a massive impact on people, the country, the environment and the world. Miner anticipates that the 21st century is going to be defined by displays in a similar way as the car did for last century. According to him, whatever goes on screens will have a huge impact on our society. He proclaims that designers play an important role as their expertise is visual storytelling and ordering information into understandable forms. 
+					<br><table></table>If designers manage to combine appealing storytelling with shaping influential, digital platforms, the consequences could be very powerful. Software used by designers would be a resourceful tool to give shape. In order to fully be in control of this creation, the limitations that are the product of software use, as Manovich described, should be surpassed. To succeed, the designer needs thus to be in control of his software or other tools. Therefore, to play a significant role in the current age, designers must understand the tools that they are dealing with.
+			</text>
+			<references>
+				<div class="reference ch-2" href="#ref-29" id="29"> No Author, "Stay Hungry, Stay Foolish", <i>The Last Whole Earth Catalog</i>, 1973, back cover.</div>
+
+				<div class="reference ch-2" href="#ref-30" id="30"> Huizinga, J. (1938), <i>Homo Ludens, Proeve eener bepaling van
+				het spel-element der cultuur</i>, Amsterdam: Amsterdam University Press.</div>
+
+				<div class="reference ch-2" href="#ref-31" id="31"> Steve Jobs, <i>114th Commencement Address</i>, June 2005, Stanford University, Stanford.</div>
+
+				<div class="reference ch-2" href="#ref-32" id="32"> Steve Jobs, <i>Stay Hungry, Stay Foolish</i>, <a href='https://www.youtube.com/watch?v=UF8uR6Z6KLc,' target='_blank'>https://www.youtube.com/watch?v=UF8uR6Z6KLc,</a> June 12 2005, Stanford University, Stanford.</div>
+
+				<div class="reference ch-2" href="#ref-33" id="33"> Dominique, N. "PORTRAIT. Les commandements de Steve Jobs", <i>Le Nouvel Observateur</i>, 35, 2011, p. 21–23.</div>
+
+				<div class="reference ch-2" href="#ref-34" id="34"> Ians, W., <i>Stay Hungry. Stay Foolish: Steve Jobs' speech at Stanford</i>, <a href='http://www.hindustantimes.com/world/stay-hungry-stay-foolish-steve-jobs-speech-at-stanford/story-OaNtclX8NEMBEybraFOuJN.html' target='_blank'>http://www.hindustantimes.com/world/stay-hungry-stay-foolish-steve-jobs-speech-at-stanford/story-OaNtclX8NEMBEybraFOuJN.html</a>, consulted on October 25th, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-35" id="35"> Essig, T. <i>How to 'Stay Hungry, Stay Foolish:" Fixing Steve Jobs Commencement Advice</i>, <a href='http://www.forbes.com/sites/toddessig/2011/10/07/how-to-stay-hungry-stay-foolish-fixing-steve-jobs-commencement-advice/' target='_blank'>http://www.forbes.com/sites/toddessig/2011/10/07/how-to-stay-hungry-stay-foolish-fixing-steve-jobs-commencement-advice/</a>, consulted on October 25th, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-36" id="36"> No Author, <i>Definition of "innovation"</i>, Merriam Webster Dictionary, <a href='http://www.merriam-webster.com/dictionary/innovation' target='_blank'>http://www.merriam-webster.com/dictionary/innovation</a>, consulted on January 11, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-37" id="37"> Strauss, V. (2011), <i>Steve Jobs told students: ‘Stay hungry. Stay foolish.'</i>, <a href='https://www.washingtonpost.com/blogs/answer-sheet/post/steve-jobs-told-students-stay-hungry-stay-foolish/2011/10/05/gIQA1qVjOL_blog.html' target='_blank'>https://www.washingtonpost.com/blogs/answer-sheet/post/steve-jobs-told-students-stay-hungry-stay-foolish/2011/10/05/gIQA1qVjOL_blog.html</a>, consulted on January 11, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-38" id="38"> No Author, <i>Definition of "Hackney"</i>, Oxford English Dictionary.</div>
+
+				<div class="reference ch-2" href="#ref-39" id="39"> Yagoda, B. (2014), <i>A Short History Of "Hack"</i>, <a href='http://www.newyorker.com/tech/elements/a-short-history-of-hack' target='_blank'>http://www.newyorker.com/tech/elements/a-short-history-of-hack</a>, consulted on November 8, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-40" id="40"> No Author, <i>Etymology of "Hackney"</i>, <a href='http://www.etymonline.com/index.php?term=hackney' target='_blank'>http://www.etymonline.com/index.php?term=hackney</a>, consulted on January 13, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-41" id="41"> Wilton D. (2006), <i>Word Origins of Hacker</i>, <a href='http://www.wordorigins.org/index.php/site/comments/hacker/' target='_blank'>http://www.wordorigins.org/index.php/site/comments/hacker/</a>, consulted on November 08, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-42" id="42"> <i>The MIT 150 Exhibition</i>, Massachusetts, May 2011–September 2011.</div>
+
+				<div class="reference ch-2" href="#ref-43" id="43"> McMillan, R. (2015), <i>125 Year Old Letter Sheds New Light On the Word Hack</i> <a href='http://www.wired.com/2015/01/125-year-old-letter-sheds-new-light-word-hack/' target='_blank'>http://www.wired.com/2015/01/125-year-old-letter-sheds-new-light-word-hack/</a>, consulted on November 08, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-44" id="44"> No Author (1968), <i>From the Cathouse, an Editorial, by Weasel, who isn't One</i>. Voodoo, Apr 1, 1968, p. 28. </div>
+
+				<div class="reference ch-2" href="#ref-45" id="45"> Collins, K. (2008), <i>Game Sound, an introduction to the history, theory and practive of video game music and sound design</i>. Massachusetts: MIT Press.</div>
+
+				<div class="reference ch-2" href="#ref-46" id="46"> Himanen, P. (2012), <i>The Hacker Ethic, And the Spirit of the Information Age</i>. New York: Random House.</div>
+
+				<div class="reference ch-2" href="#ref-47" id="47"> No Author, <i>History of the OSI</i>, <a href='https://opensource.org/history' target='_blank'>https://opensource.org/history</a>, consulted on November 12, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-48" id="48"> No Author, <i>Free Software Philosophy</i>, <a href='http://www.gnu.org/philosophy/free-software-intro.html' target='_blank'>http://www.gnu.org/philosophy/free-software-intro.html</a>, consulted on November 12, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-49" id="49"> Stallman, R., <i>History of GNU</i>, <a href='http://www.gnu.org/gnu/gnu-history.html' target='_blank'>http://www.gnu.org/gnu/gnu-history.html</a>, consulted on November 12, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-50" id="50"> Roosevelt, T., "Every reform movement has a lunatic fringe." <a href='http://dictionary.reference.com/browse/lunatic-fringe' target='_blank'>http://dictionary.reference.com/browse/lunatic-fringe</a>, consulted on November 12, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-51" id="51"> Trauth E., Howcroft D., Butler T., Fitzgerald J., DeGross J. (2006), </i>Social Inclusion: Societal and Organizational Implications for Information Systems</i>. Houten: Springer Media B.V.</div>
+
+				<div class="reference ch-2" href="#ref-52" id="52"> Raymond, E. (2003), <i>The Art of UNIX Programming</i>. Boston: Addison-Wesley Professional.</div>
+
+				<div class="reference ch-2" href="#ref-53" id="53"> Bogost, I. (2008), <i>The Rhetoric of Video Games</i>. Georgia: The Georgia Institute of Technology.</div>
+
+				<div class="reference ch-2" href="#ref-54" id="54"> Wark McK. (2007), <i>A Hacker Manifesto</i>. Cambridge: Harvard University Press.</div>
+
+				<div class="reference ch-2" href="#ref-55" id="55"> Kiani, S., Vallance, R. and Nayfeh S.,<i> The Open Design Definition</i>, <a href='http://opendesign.org/odd.html' target='_blank'>http://opendesign.org/odd.html</a>, consulted on January 12, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-56" id="56"> Lambers, R. <i>Open Collector</i>, <a href='https://web.archive.org/web/20000815220720/http://opencollector.org/' target='_blank'>https://web.archive.org/web/20000815220720/http://opencollector.org/</a>, consulted on January 12, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-57" id="57"> Kadushin, R., <i>Design Manifesto</i>, <a href='http://www.ronen-kadushin.com/files/4613/4530/1263/Open_Design_Manifesto-Ronen_Kadushin_.pdf' target='_blank'>http://www.ronen-kadushin.com/files/4613/4530/1263/Open_Design_Manifesto-Ronen_Kadushin_.pdf</a>, consulted on January 12, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-58" id="58"> Abel, van, B., Klaassen, R., Evers, L. and Troxler, P. (2011) <i>Open Design Now</i>, Amsterdam: BIS publishers.</div>
+
+				<div class="reference ch-2" href="#ref-59" id="59"> Mason, P. (2015), <i>PostCapitalism: A Guide to our Future</i>, Bristol: Allen Lane.</div>
+
+				<div class="reference ch-2" href="#ref-60" id="60"> Levin, G., <i>Website of Golan Levin and collaborators</i>, <a href='http://www.flong.com/' target='_blank'>http://www.flong.com/</a>, consulted on November 23, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-61" id="61"> Levin, G., <i>The Free Universal Construction Kit</i>, <a href='http://fffff.at/free-universal-construction-kit/' target='_blank'>http://fffff.at/free-universal-construction-kit/</a>, consulted on November 23, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-62" id="62"> Golan Levin, <i>The Free Universal Construction Kit and other projects</i>, November 6, 2015, KIKK festival, Namur,Belgium. </div>
+
+				<div class="reference ch-2" href="#ref-63" id="63"> Wark McK., <i>Copyright, Copyleft, Copygift!</i>, Online Open, <a href='http://onlineopen.org/copyright-copyleft-copygift' target='_blank'>http://onlineopen.org/copyright-copyleft-copygift</a>, consulted on December 16, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-64" id="64"> No Author (2015), <i>Understanding Copyright and Related Rights</i>, Geneva: World Intellectual Property Organization.</div>
+
+				<div class="reference ch-2" href="#ref-65" id="65"> Kohlberg, I.T., <i>Freeware vs. Shareware</i>, <a href='http://otd.harvard.edu/faculty-inventors/protecting-your-discovery/computer-software/freeware-vs.-shareware/' target='_blank'>http://otd.harvard.edu/faculty-inventors/protecting-your-discovery/computer-software/freeware-vs.-shareware/</a>, consulted on December 16, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-66" id="66"> Wark McK. (2007), <i>Copyright, Copyleft, Copygift<i>, Online Open!, <a href='http://onlineopen.org/copyright-copyleft-copygift' target='_blank'>http://onlineopen.org/copyright-copyleft-copygift</a>, consulted on December 16th, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-67" id="67"> Fishman, S. (2007), <i>Legal Guide to Web & Software Development</i>. Pleasanton: Nolo.</div>
+
+				<div class="reference ch-2" href="#ref-68" id="68"> No Author, <i>GNU General Public License</i>, <a href='http://www.gnu.org/licenses/gpl-3.0.en.html' target='_blank'>http://www.gnu.org/licenses/gpl-3.0.en.html</a>, consulted on January 13, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-69" id="69"> Documentary: </i>TPB AFK: The Pirate Bay Away From Keyboard</i>, <a href='https://www.youtube.com/watch?v=eTOKXCEwo_8,' target='_blank'>https://www.youtube.com/watch?v=eTOKXCEwo_8,</a> consulted on December 24, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-70" id="70"> No Author, <i>Explanation of the Beerware License</i>, <a href='https://tldrlegal.com/license/beerware-license' target='_blank'>https://tldrlegal.com/license/beerware-license</a>, consulted on December 24, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-71" id="71"> No Author, <i>The MIT License (MIT)</i>, <a href='https://opensource.org/licenses/MIT' target='_blank'>https://opensource.org/licenses/MIT</a>, consulted on December 24, 2015.</div>
+
+				<div class="reference ch-2" href="#ref-72" id="72"> Lev Manovich, <i>Who is the Author? Sampling / Remixing / Open Source</i>, <a href='http://davidgovoni.com/dif/notes/manovich.html' target='_blank'>http://davidgovoni.com/dif/notes/manovich.html</a>, consulted on February 15, 2016.</div>
+
+				<div class="reference ch-2" href="#ref-73" id="73"> McLuhan, M. (1964), <i>Understanding Media</i>. Berkeley: Ginko Press.</div>
+
+				<div class="reference ch-2" href="#ref-74" id="74"> Miner, W., <i>When we build</i> November 10, 2011, Build Conference, Belfast.</div>
+			</references>
+			<images> 
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/wholeearthcatalog.jpg" longdesc="">
+					<div class="image-text">
+						The Whole Earth Catalog, 1968, cover.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/stayhungry.jpg" longdesc="">
+					<div class="image-text">
+						The Last Whole Earth Catalog, backside, 1973.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/huizinga.jpg" longdesc="">
+					<div class="image-text">
+						Cover of 'Homo Ludens', Johan Huizinga. 
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/steve-jobs-holding-apple.jpg" longdesc="http://www.blackdogadvertising.com/miami-advertising-blog/wp-content/uploads/steve-jobs-holding-apple.jpg">
+					<div class="image-text">
+						Steve Jobs holding an Apple.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-2/mrrobot.png" longdesc="">
+					<div class="image-text">
+						Still from Mr. Robot, a <i>Universal Cable Productions</i> series about hackers.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/hackerstereotype.jpg" longdesc="">
+					<div class="image-text">
+						Hacker Stereotype (Mr. Robot).
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/Computer_Hacking.jpg" longdesc="">
+					<div class="image-text">
+						A message in the newspaper about hackers, The Cambridge Massachusetts Newspaper (1963). 
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/stallman.jpg" longdesc="">
+					<div class="image-text">
+						Richard Stallman in an african gown. Stallman has an eccentric fashion taste, his two favourite outfits seeming to be the african gown and the (specifically red) polo shirt.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/richard-stallman-redshirt.jpg" longdesc="">
+					<div class="image-text">
+						Richard Stallman in a red poloshirt.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/2_4_richard-stallman.jpg" longdesc="">
+					<div class="image-text">
+						Richard Stallman in a red poloshirt.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/richard.jpg" longdesc="">
+					<div class="image-text">
+						Richard Stallman in a red poloshirt.
+					</div>
+				</div>
+				
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/myfriendstallman.jpeg" longdesc="">
+					<div class="image-text">
+						Richard Stallman in a red poloshirt.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/esr001.jpg" longdesc="">
+					<div class="image-text">
+						Eric Rayman. His computer in the background says 'Don't Panic! A hacker not a cracker'.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/Manifesto.jpg" longdesc="">
+					<div class="image-text">
+						<i>A Hacker Manifesto </i>, McKenzie Wark. 
+					</div>
+				</div>
+
+
+				
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/gnu.png" longdesc="">
+					<div class="image-text">
+						The GNU logo.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/beerware.jpg" longdesc="">
+					<div class="image-text">
+						The Beerware logo.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/github-512.png" longdesc="">
+					<div class="image-text">
+						Github is a platform commonly use to share open source tools.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/kit.jpg" longdesc="">
+					<div class="image-text">
+						The Free Universal Construction Kit, Golan Levin.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/kit-2.jpg" longdesc="">
+					<div class="image-text">
+						The Free Universal Construction Kit, Golan Levin.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/kit-3.jpg" longdesc="">
+					<div class="image-text">
+						The Free Universal Construction Kit, Golan Levin.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/car.jpg" longdesc="">
+					<div class="image-text">
+						A 1920 model car.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/oilplatform.jpg" longdesc="">
+					<div class="image-text">
+						Oil platform nearby the coast of Angola.
+					</div>
+				</div>
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-2/mcluhan.jpg" longdesc="">
+					<div class="image-text">
+						Marshall McLuhan.
+					</div>
+				</div>
+				
+			</images>
+		</content>
+	</chapter>
+
+	<chapter> 
+		<chapternumber> [0011] (3) chapter 3 </chapternumber>
+		<name id="Chapter3">Literacy</name>
+		<content> 
+			<text id="ch-3">
+				In 2010, Douglas Rushkoff wrote a book he titled <i> Program or be programmed—ten commandments for the digital age.</i> <a id="ref-75" href="#75"></a> In his book, he explains how he sees programming as the new literacy of our times. As more activities are happening online or on-screen, many important events occur in this new language. He regards literacy as a combination of reading and writing, in this case, code.
+					<br><table></table>According to Rushkoff, the literacy of society evolved accordingly to the development of their media: first, there was the spoken word, then there was written text, then there was the printing press and then the computer with which we can program—but ‘we’ is actually not all of us. Around the time of the rise of written text such as bibles, a great many people were not able to read, so people went to church to listen to the clergy. When the printing press printed books, people gradually began to read more. The rise in the rate of literacy has taken centuries and was not significant until the establishment of a state school system much later. Nevertheless, the free flow of information created a more informed public and therefore could dismantle the Church monopoly of knowledge. However, even then only a small elite became writers or printers. Now, as literacy is a human right <a id="ref-76" href="#76"></a>, all write text, blog, tweet, post, mail, and app. Yet many people do not know how to program. 
+					<br><table></table>The majority commonly was on the receiving end of the medium that was the newest état de l’art, one step behind on the current abstraction of the media. Rushkoff insists that programming is an even more significant development than the printing press; it is at least as important as written text. <a id="ref-77" href="#77"></a> Just like previous media transmitted influential content to the people, just as in the West Christianity and Protestantism did, programming should be doing a similar job.
+
+				<subtitle><br>Subjectivity</subtitle>
+				Nowadays it is important for all people to be able to feel contempt for the biases of platforms and media that they use, in order to understand the rules of the game. For instance, people that use Apple’s cloud system—the place where all personal files are stored—, often don’t realise how this new structure makes them more dependent on a system than if they save their files locally. The Cloud is frequently thought of as content floating around in the air, whereas it in fact is a global network of energy-sucking, steaming server farms. Sadly, it is common to not comprehend the biases that programs and systems include. 
+					<br><table></table>A piece of code has a contextual background – whether corporate, political or otherwise. A clear, recent example of subjectivity of code is the North Korean operating system that leaked out. As one of the most isolated countries in the world, its communist citizens “are being brainwashed”.<a id="ref-78" href="#78"></a> The operating system (OS) that was recently found, showed how something considered objective was programmed to constantly monitor the user. The OS thus constantly followed the citizens’ every move, leaving no privacy to them while using a computer. The West were appalled at the news, and the media covered the story with a strong tone of reproof. <a id="ref-79" href="#79"></a> Who says that it is just the case for North Korea? It may be an extreme example, but the limitations in software constitute an omnipresent, continuous process in many more cases. 	
+					<br><table></table>The fact that Western society reacted with such a great shock, reveals the paradigm of our own conviction that surveillance in OSs is abnormal, and that in the West this type of monitoring is not the case. This reaction is incongruent, for it painfully shows that the common public fails to recognise the many similar ways of monitoring and tagging in Western operating systems and networks. Some kinds of monitoring, most people know but “don’t care” about, “because everybody is using it” and “I have nothing to hide”. (Ironically, the latter argument has its own Wikipedia page. <a id="ref-80" href="#80"></a>) The PRISM scandal in 2013, when Edward Snowden leaked information about the CIA’s surveillance program that collected internet communications in the USA, revealed that Western network infrastructures are not waterproof. <a id="ref-81" href="#81"></a> Society takes a certain objectivity of code for granted that in many cases does not exist. Western OSs include many cases dangerously similar to the North Korean example, yet a large part of society seems to fail to acknowledge it. 
+
+				<subtitle><br>Responsibility</subtitle>
+				<br>It is not always true that major companies can be relied on; therefore it is one must always stay critical about one’s environment. According to the deconstruction theory of French postmodern philosopher Jacques Derrida, objectivity can never be accomplished. <a id="ref-82" href="#82"></a> Supposed objectivity in truth can be deconstructed, although truth never has objectivity. <a id="ref-83" href="#83"></a> Truth can be told from the inner workings of networks, not from the spokesmen that try to sell them to you. 
+				<br><table></table>Code is subjective and contains such biases, but these are also sustained by underlying factors. The problem of surveillance and power structures has a broad, fundamental base that keeps it securely rooted in its place. It is not only in the code of the program or website itself, but it also has to do with the physical structure which they were built on top of. Many networks are physically located in a centralised cloud. And it is not even illegal! The fact that by using a network, one agrees with the storage of data on one of the companies’ servers <a id="ref-84" href="#84"></a> is sneakily—intentionally—hidden in long, unstructured texts with a baffling jargon. “The usage and all data about this usage of a commonly visited website such as Google may be processed and saved at server farms on another continent. How long it is stored and what happens in the meantime is not clarified.” <a id="ref-85" href="#85"></a>, the Google Privacy Policy says. Such influential companies can do so because they have the resources, acclaim and physical circumstances to do so. 
+					<br><table></table>From the way that Rushkoff describes code literacy and the events that happen on programmer’s level, two conclusions can be drawn. First of all, it is rather useful to understand code in order to understand what is going on. Obviously it is not everybody’s task to program whole operating systems, but it is clear that code is a powerful language that can have a lot of impact. 
+					<br><table></table>Secondly, there is a gap between the way that new media are used and the lack of acknowledgement of these uses. As code is the new international literacy, it is in fact a new medium, but a hidden one. For the sake of human rights, keeping an ethical code in this realm should be seriously pursued. Paradoxically, the group of people with the most moralistic view on code is one that is seen as digital pirates, hackers. <a id="ref-86" href="#86"></a> 
+					<br><table></table>Designers that want to change the world, resist the authority of state or be critical, go ahead and start learning your share of code. From previous examples, it is clear that code is a powerful language that can have a lot of impact. Design might not be as influential as vast software and hardware networks, but it can help a great deal. To do so in an ethical manner—to help others or to solve problems—is something that not only designers can be held responsible for, but (curious) humans in general.
+					
+				<subtitle><br>Design as interface</subtitle>
+				<br>The interface is a surface of contact between two adjacent elements. <a id="ref-87" href="#87"></a> If one considers the screen as interface, there are multiple surfaces of contact to be distinguished.
+					<br><table></table>The first is the physical hardware of the screen. Electricity runs through the network, reaches the screen, which in turn translates binaries to light up the LEDs in the grid. The second layer of interface is the digital system that constructs the rules for interaction: which action of a user undertakes which consequence on the screen. The third is the graphical layout of the content shown on the screen. <a id="ref-88" href="#88"></a>
+				<br><table></table>Design has little to do with the first two types of interface of the screen, yet the third type fits exceptionally well to its capabilities. Design as a conductor of graphical literacy can explain abstract information through a vocabulary of form, layout and interaction. As a non-verbal language, graphical literacy is based on the understanding and creation of significant form. <a id="ref-89" href="#89"></a> Next to that, design involves text processing and rules of typography. According to dual-coding theory, information is easier to retain and retrieve when it is coded both verbally and visually. <a id="ref-90" href="#90"></a>
+				<br><table></table>Therefore, design can create accessibility of the screen with its knowledge about form. The graphical and typographical principles of design function as interface between the computer and the user. On top of that graphical language subjective, as the one writing inevitably passes something more than neutrality. Design can have an influence on encoding levels of literacy that are not directly perceivable as a visual artifact. <a id="ref-91" href="#91"></a> Graphical design thus allows communicating through the graphical layout of screens on multiple levels. 
+					
+				<br><table></table>Code literacy allows the designer to control his share of impact. Combined with graphical literacy, design have the power to shape the (digital) environment on which we spend most of our time, for the rest of our lives. What do we want that environment to be like? We are the designers, and the builders. We can decide how we want to use the voice we have. 
+
+				<quote>“If Mark Twain were visualizing such a big problem in society, or if it were Jorge Luis Borges, what would that look like? It sure wouldn’t be a “get the largest data base and collect absolutely all the data” and things like that. Instead it would be a “How can I meet people where they are and wrap it in a way that tells a story?”</quote><br> — Ben Fry, creator of Processing <a id="ref-92" href="#92"></a>
+			</text>
+			<references>
+
+				<div class="reference ch-3"  href="#ref-75" id="75"> Rushkoff, D. (2010), <i>Program or be programmed – ten commandments for the digital age</i>. Berkeley: Soft Skull Press.</div>
+
+				<div class="reference ch-3"  href="#ref-76" id="76"> No Author, <i>UNESCO, Literacy</i>, <a href="http://www.unesco.org/new/en/education/themes/education-building-blocks/literacy/" target="_blank">http://www.unesco.org/new/en/education/themes/education-building-blocks/literacy/</a>, consulted on November 6, 2015.</div>
+
+				<div class="reference ch-3"  href="#ref-77" id="77"> Rushkoff, D. <i>Program or be Programmed: Ten Commands for a Digital Age</i>, SXSW® Interactive Festival, 2010, Austin.</div>
+
+				<div class="reference ch-3"  href="#ref-78" id="78"> Taylor, K. (2011), <i>Has Kim Jong-il brainwashed North Koreans?</i>, <a href='http://www.theguardian.com/commentisfree/2011/dec/20/kim-jong-il-brainwashed-north-koreans' target='_blank'>http://www.theguardian.com/commentisfree/2011/dec/20/kim-jong-il-brainwashed-north-koreans</a>, consulted on February 2, 2016.</div>
+
+				<div class="reference ch-3"  href="#ref-79" id="79">Weijer, van de, B. (2015), <i>Noord-Koreaanse pc houdt gebruiker in de gaten</i>, <a href='http://www.volkskrant.nl/tech/noord-koreaanse-pc-houdt-gebruiker-in-de-gaten~a4215273/' target='_blank'>http://www.volkskrant.nl/tech/noord-koreaanse-pc-houdt-gebruiker-in-de-gaten~a4215273/</a>, consulted on January 29, 2016.</div>
+
+				<div class="reference ch-3"  href="#ref-80" id="80"> No Author, <i>Nothing to hide argument</i>, <a href='https://en.wikipedia.org/wiki/Nothing_to_hide_argument' target='_blank'>https://en.wikipedia.org/wiki/Nothing_to_hide_argument</a> consulted on January 29, 2016.</div>
+
+				<div class="reference ch-3"  href="#ref-81" id="81"> Elliott K. and Rupar T., <i>Six months of revelations on NSA</i>, <a href='http://www.washingtonpost.com/wp-srv/special/national/nsa-timeline/' target='_blank'>http://www.washingtonpost.com/wp-srv/special/national/nsa-timeline/</a>, consulted on January 29, 2016.</div>
+
+				<div class="reference ch-3"  href="#ref-82" id="82"> No Author, <i>Jacques Derrida Defining Deconstruction</i>, <a href='https://www.youtube.com/watch?v=vgwOjjoYtco' target='_blank'>https://www.youtube.com/watch?v=vgwOjjoYtco</a>, consulted on November 11, 2015.</div>
+
+				<div class="reference ch-3"  href="#ref-83" id="83"> Documentary: <i>Derrida, Kirby Dick and Amy Ziering Kofman</i>, Zeitgeist Films, 2002.</div>
+
+				<div class="reference ch-3"  href="#ref-84" id="84"> Google Inc., <i>Privacy Policy</i>, <a href='https://www.google.com/policies/privacy/' target='_blank'>https://www.google.com/policies/privacy/</a>. consulted on January 29, 2016</div>.
+				<div class="reference ch-3"  href="#ref-85" id="85"> Ibid.</div>
+
+				<div class="reference ch-3"  href="#ref-86" id="86"> Camilleri, J. and Falk, J. (2009), <i>Worlds in Transition: Evolving Governance Across a Stressed Planet</i>. Cheltenham: Edward Elgar Publishing.</div>
+
+				<div class="reference ch-3"  href="#ref-87" id="87"> No Author, <i>Definition of the interface</i>, Merriam Webster Online Dictionary. </div>
+
+				<div class="reference ch-3"  href="#ref-88" id="88"> No Author,<i>Definition of the interface of the screen</i>, the Free Dictionary</div>
+
+				<div class="reference ch-3"  href="#ref-89" id="89"> Bamford, A. (2003), <i>The Visual Literacy White Paper</i>. Sydney: Art and Design University.</div>
+
+				<div class="reference ch-3"  href="#ref-90" id="90"> Gan, Y., Scardamalia, M., Hong, Y., Zhang J. (2004), <i>Making Thinking Visible: Growth in Graphical Literacy, Grades 3 to 4</i>.Toronto: Ontario Institute for Studies in Education.</div>
+
+				<div class="reference ch-3"  href="#ref-91" id="91"> Interview Benjamin Bratton, Machine Vision, March 3, 2015. </div>
+
+				<div class="reference ch-3"  href="#ref-92" id="92"> Interview with Ben Fry, <i>Substratum Issue 2: Visual Systems</i>. July 29, 2011. </div>
+
+			</references>
+			<images>
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-3/clay-tablet.png" longdesc="">
+					<div class="image-text">
+						An ancient clay imprint technique.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image  image-filter" data-original="images/ch-3/paper-scroll-right.png" longdesc="">
+					<div class="image-text">
+						A papyrus scroll as used in Egypt.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image  image-filter" data-original="images/ch-3/press.png" longdesc="">
+					<div class="image-text">
+						Printing press of the industial age.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/northkorea os.jpg" longdesc="">
+					<div class="image-text">
+						The operating system of North Korea.
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/apple.jpg" longdesc="">
+					<div class="image-text">
+						Apple Leopard operating system.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/prism.jpg" longdesc="">
+					<div class="image-text">
+							Prism.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/edward-snowden.jpg" longdesc="">
+					<div class="image-text">
+						Edward Snowden in <i>Citizen Four</i>, a documentary by Laura Poitras.
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/derrida.jpg" longdesc="">
+					<div class="image-text">
+						Jacques Derrida, <i>deconstruction</i>. Still from an interview. 
+					</div>
+				</div>
+
+
+				<div class="side-image-container">
+					<img class="side-image image-filter" data-original="images/ch-3/server-apple.jpg" longdesc="">
+					<div class="image-text">
+						Apple's 'Cloud'.
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/server-google-2.jpg" longdesc="">
+					<div class="image-text">
+						Google serverfarm, which isn't open for the public nor press. The photos were distributed by Google. 
+					</div>
+				</div>
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/server-google.jpg" longdesc="">
+					<div class="image-text">
+						Google serverfarm.
+					</div>
+				</div>
+				
+				
+
+				<div class="side-image-container">
+					<img class="side-image" data-original="images/ch-3/marktwain.jpg" longdesc="">
+					<div class="image-text">
+						Mark Twain (or Samuel Clemens).
+					</div>
+				</div>			
+	
+			</images>
+		</content>
+	</chapter>
+
+	
+	<chapter> 
+		<chapternumber> [0100] (4) Conclusion </chapternumber>
+		<name id="Conclusion">Conclusion</name>
+		<text> 
+			<i>Why is it urgent for designers and their tools to learn how to program?</i><br>
+
+			<br><table></table>As times have changed; tools have. Graphic design is not in its definition tied to a specific medium, but is rather about organising information. From the beginning of its existence a varied range of tools have been in vogue, resulting in the diverse instances of graphic design work. With the rise in popularity of computers, digital tools and media have become gradually more accessible and cheap to work with. 
+				<br><table></table>Now that the design field is so saturated with hybrid forms of disciplines, there is a great demand for multidisciplinary designers that can also code. For themselves it is an influential decision for their way of working whether or not to learn how to program. It is not beneficial to be fully dependent on others during a working process. Working together can be fruitful, but a unified process is often more structured, less inconsistent and finishes faster. To be able to work alone saves time and effort. 
+				Programming as a tool isn't as far-fetched for the design discipline. Design as a profession is not made up out of one single skill, and combining multiple skills can reinforce them. On top of that, programming can be considered a craft similar to traditional design techniques. 
+				<br><table></table>Furthermore, by trying there is not much to lose. One does not unlearn when new knowledge is acquired and all additional knowledge is valuable, especially if it has to do with one’s environment. In the case of the designer, learning programming certainly is related, as there are many examples of tools that combine programming with artistic output.
+				<br><table></table>On a larger scale a curiosity for the unknown is one of man's most precious features, because it leads to experimentation, play and possibly innovation. At play there is room for intuition and thus new things can happen. We can also learn from the hacker ethic where the strive is to 'playfully do something difficult'. 
+				<br><table></table>The hacker movement has had a major influence on the accessibility of information online. Information, programs and learning environments are now easier to access than ever before, making it possible for the designer to learn, use tools and contribute with ones. This gave rise to new models of authorship and collaboration based on sharing that made it easier to create something that would be beyond the technical limitations of the designer’s power and influence. 
+				<br><table></table>Learning how to program creates the possibility of creating custom digital tools. Prefabricated design software results in an unequal collaboration between designer and program, where the designer is dependent on concrete decisions made by the developers of the concerning program that are not open to alteration. By creating custom tools there are different limitations and the designer can create truly personal work by being in control of the set of specific limitations.
+				<br><table></table>Code is the literacy of our current age and has great impact on society.
+			It is not the role of the designer to directly alter this impact, but he or she should be aware of the problematics that result from this shift. A basic knowledge is primordial for better comprehension.
+				<br><br>The role of the designer is the translation of such abstract information by ordering it with combination of graphical and textual and code literacy and to give shape to the digital environment in which we spend most of our time, for the rest of our lives.
+		</text>
+	</chapter>
+	<colophon id="Colophon"> 
+			<div class="colophon-text">
+				Colophon <br> <br> <br>
+				<i>Author:</i><br> <a href="veravandeseyp.com">Vera van de Seyp</a> <br><br>
+				<i>Editor:</i> <br>Heleen van Loon <br><br>
+				<i>Tutors: </i> <br>
+				Nick Axel <br>
+				Marjan Bransma<br>
+				Dirk Vis
+			<br> <br>
+				This thesis was made in 2015–2016 by Vera van de Seyp at the Royal Academy of Arts, The Hague. <br> <br> <br>
+
+					
+			</div>
+			<div class="hackstuff">
+			<p class="data date"></p>
+			<p class="data time"></p>
+			<p class="data your-password"></p>
+			<p class="data ip"></p>
+			<p class="data visit-time"> </p>
+			<p class="data coordinates"></p>
+			<p class="data location"></p>
+			<p class="data computer"></p>
+			<p class="data os"></p>
+			<p class="data browser"></p>
+			<p class="data browserversion"></p>
+			<p class="data cookies"></p>
+			<p class="data language"></p>
+		</div>
+	</colophon>
+
+	<footer id="Footer"></footer>
+
+</body>
 </html>

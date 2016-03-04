@@ -1,0 +1,244 @@
+/* WHEN PRINTING */
+	@page {
+		size: 21cm 29.7cm;
+		margin: 1cm 0;
+		@top-center {
+		    font-family: sans-serif;
+		    font-weight: bold;
+		    font-size: 2em;
+		    content: counter(page);
+		  }
+	}
+
+	@page :left {
+		@top-left {
+			content: "A New Kind of Print";
+		}
+	}
+
+	@page blank :left {
+		@top-left {
+			content: "A New Kind of Print";
+		}
+	}
+
+	$margin-left-print: 2cm;
+	$margin-right-print: 3cm; 
+	$margin-bottom: 2cm;
+
+	$font-size-print: 11pt;
+	$font-lead-print: 11pt;
+	
+	$font-size-print-reference: 6pt;
+	$font-lead-print-reference: 7pt;
+
+
+@media print {
+	::-webkit-scrollbar { 
+    	display: none; 
+	}
+	
+	.percentage-line {
+		width: 40px;
+		margin-right: -10px;
+		
+	}
+
+	percent {
+		width: 100%;
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid;
+	}
+	percent p {
+		margin-left: -15px;
+	}
+	
+	* {
+		font-family: "Source Code Pro";
+		border: none;
+	}
+
+	body {     
+		width: 80%;     
+		float: none;     
+		position: static;     
+		overflow: visible; 
+	}
+
+	section {
+		display: none;
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		page-break-after: always; 
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid;
+	}
+
+	chapter	{  
+		page-break-after: always; 
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid; 
+    	padding: 0;
+    	font-family: "Source Code Pro";
+	}
+
+	iframe {
+		display: none;
+	}
+
+	header {
+		display: none;
+	}
+	
+	behind {
+		position: fixed;
+		display: none;
+		height: 100%;
+	}
+
+	.border {
+		position: relative;
+		display: block;
+		width: 20%;
+	}
+
+	name {
+		display: none;
+	}
+
+	.name-print {
+		display: block;
+		position: relative;
+		font-family: "Source Code Pro";
+		width: 100%;
+		font-size: 6px;
+		line-height: 6px;
+		float: left;
+		color: $support-color-full;
+		margin: 0 $margin-right-print $margin-bottom $margin-left-print;
+
+	}
+	
+	content {
+		width:auto; 
+		height: auto;
+		display:inline; 
+		padding: 0;
+		display: block;
+		width: 15cm;
+		margin: 0 $margin-right-print 0 $margin-left-print;
+		top: 0;
+	}
+
+	
+	quote {
+		display: block;
+		color: $support-color-full;
+		font-size: $font-size-print;
+		line-height: $font-lead-print*1.5;
+		font-weight: normal;
+	}
+
+	text {
+		font-family: "Source Serif Pro";
+		font-size: $font-size-print;
+		line-height: $font-lead-print;
+		display: inline;
+	}
+
+	text i {
+		font-family: "Source Serif Pro";
+		font-size: $font-size-print;
+		line-height: $font-lead-print *1.5;
+		float: left;
+		padding: 0;
+	}
+
+	text a {
+		font-size: $font-size-print-reference;
+		font-weight: normal;
+	}
+
+	images { 
+		display: none;
+		position: relative;
+		float: top;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	chapternumber {
+		margin: 0 $margin-right-print 0 $margin-left-print ;
+		font-size: $font-size-print;
+		line-height: $font-lead-print;
+		color: $support-color-full;
+	}
+
+	subtitle {
+		font-size: $font-size-print;
+		line-height: $font-lead-print;
+		color: $support-color-full;
+		font-weight: normal;
+	}
+
+	references { 
+		display: block;
+		position: relative;
+		height: auto; 
+		float: left;
+		left: 18cm;
+		width: 4cm;
+
+		padding: 0;
+		border: none;
+		font-size: $font-size-print;
+		line-height: $font-lead-print;
+		font-family: "Source Code Pro";
+	}
+
+	references l {
+		position: relative;
+		display: block;
+		float: left;
+		height: auto;
+		width: 20px;
+		height:  $font-size-print-reference - 1pt;
+		font-size: $font-size-print-reference;
+		line-height: $font-lead-print;
+
+	}
+
+	colophon {
+		page-break-after: always; 
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid; 
+		padding: 0;
+		display: block;
+		position: relative;
+		color: black;
+
+	}
+
+	.reference i {
+		font-family: "Source Code Pro";
+		font-size: $font-size-print-reference;
+		line-height: $font-lead-print;
+		text-align: left;
+		text-overflow: visible;
+	}
+
+	.reference {
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		font-family: "Source Code Pro";
+		font-size: $font-size-print-reference;
+		line-height: $font-lead-print;
+		text-align: left;
+		text-overflow: visible;
+	}
+}
