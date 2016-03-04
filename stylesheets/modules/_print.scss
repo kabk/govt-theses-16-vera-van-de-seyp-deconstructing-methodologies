@@ -84,6 +84,14 @@
     	font-family: "Source Code Pro";
 	}
 
+	.landing-page {
+		page-break-after: always; 
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid;
+		padding: 0;
+		font-family: "Source Code Pro"; 
+	}
+
 	iframe {
 		display: none;
 	}
@@ -185,30 +193,37 @@
 	}
 
 	references { 
-		display: block;
+		font-family: 'Source Code Pro';
 		position: relative;
-		height: auto; 
-		float: left;
-		left: 18cm;
-		width: 4cm;
-
-		padding: 0;
-		border: none;
-		font-size: $font-size-print;
-		line-height: $font-lead-print;
-		font-family: "Source Code Pro";
+		display: none;
+		min-height: 20px;
+		max-height: 100%;
+		width: 15cm;
+		float: clear;
+		margin: $margin-s;
+		margin-top: $small-top-padding/2;
+		padding-top: $small-top-padding/2;
+		font-size: $ref-txt-s;
+		line-height: $ref-txt-s * 1.5;
 	}
 
-	references l {
-		position: relative;
-		display: block;
-		float: left;
-		height: auto;
-		width: 20px;
-		height:  $font-size-print-reference - 1pt;
-		font-size: $font-size-print-reference;
-		line-height: $font-lead-print;
+	// references l {
+	// 	display: block;
+	// 	float: left;
+	// 	height: auto;
+	// 	width: 20px;
+	// 	height:  $font-size-print-reference - 1pt;
+	// 	font-size: $font-size-print-reference;
+	// 	line-height: $font-lead-print;
 
+	// }
+
+	conclusion {
+		page-break-after: always; 
+		page-break-inside: avoid; 
+		-webkit-region-break-inside: avoid; 
+    	padding: 0;
+    	font-family: "Source Code Pro";
 	}
 
 	colophon {
@@ -219,22 +234,25 @@
 		display: block;
 		position: relative;
 		color: black;
+		margin: 0 $margin-right-print 0 $margin-left-print;
 
 	}
 
-	.reference i {
-		font-family: "Source Code Pro";
-		font-size: $font-size-print-reference;
-		line-height: $font-lead-print;
-		text-align: left;
-		text-overflow: visible;
+.endnotes {
+	page-break-after: always; 
+	page-break-inside: avoid; 
+	-webkit-region-break-inside: avoid; 
+	padding: 0;
 	}
 
 	.reference {
-		position: relative;
+		position: none;
 		float: left;
-		display: block;
+		// display: block;
 		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: white;
 		font-family: "Source Code Pro";
 		font-size: $font-size-print-reference;
 		line-height: $font-lead-print;

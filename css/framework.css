@@ -519,9 +519,39 @@ header {
   padding: 0;
   background-color: black;
   color: #FAFAFA;
-  font-family: 'Source Code Pro';
-  font-size: 75pt;
-  line-height: 100pt; }
+  font-family: 'Source Code Pro'; }
+
+.landing-title {
+  position: relative;
+  margin: 30px; }
+  @media (min-width: 260px) {
+    .landing-title {
+      font-size: 20pt;
+      line-height: 24pt; } }
+  @media (min-width: 768px) {
+    .landing-title {
+      font-size: 26pt;
+      line-height: 33pt; } }
+  @media (min-width: 1050px) {
+    .landing-title {
+      font-size: 75pt;
+      line-height: 100pt; } }
+
+.landing-subtitle {
+  position: relative;
+  margin: 30px; }
+  @media (min-width: 260px) {
+    .landing-subtitle {
+      font-size: 20pt;
+      line-height: 24pt; } }
+  @media (min-width: 768px) {
+    .landing-subtitle {
+      font-size: 26pt;
+      line-height: 33pt; } }
+  @media (min-width: 1050px) {
+    .landing-subtitle {
+      font-size: 26pt;
+      line-height: 33pt; } }
 
 colophon {
   display: block;
@@ -796,6 +826,13 @@ images {
     padding: 0;
     font-family: "Source Code Pro"; }
 
+  .landing-page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
+    padding: 0;
+    font-family: "Source Code Pro"; }
+
   iframe {
     display: none; }
 
@@ -881,27 +918,25 @@ images {
     font-weight: normal; }
 
   references {
-    display: block;
+    font-family: 'Source Code Pro';
     position: relative;
-    height: auto;
-    float: left;
-    left: 18cm;
-    width: 4cm;
-    padding: 0;
-    border: none;
-    font-size: 11pt;
-    line-height: 11pt;
-    font-family: "Source Code Pro"; }
+    display: none;
+    min-height: 20px;
+    max-height: 100%;
+    width: 15cm;
+    float: clear;
+    margin: 0 5%;
+    margin-top: 25px;
+    padding-top: 25px;
+    font-size: 13pt;
+    line-height: 19.5pt; }
 
-  references l {
-    position: relative;
-    display: block;
-    float: left;
-    height: auto;
-    width: 20px;
-    height: 5pt;
-    font-size: 6pt;
-    line-height: 11pt; }
+  conclusion {
+    page-break-after: always;
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
+    padding: 0;
+    font-family: "Source Code Pro"; }
 
   colophon {
     page-break-after: always;
@@ -910,20 +945,22 @@ images {
     padding: 0;
     display: block;
     position: relative;
-    color: black; }
+    color: black;
+    margin: 0 3cm 0 2cm; }
 
-  .reference i {
-    font-family: "Source Code Pro";
-    font-size: 6pt;
-    line-height: 11pt;
-    text-align: left;
-    text-overflow: visible; }
+  .endnotes {
+    page-break-after: always;
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
+    padding: 0; }
 
   .reference {
-    position: relative;
+    position: none;
     float: left;
-    display: block;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
     font-family: "Source Code Pro";
     font-size: 6pt;
     line-height: 11pt;

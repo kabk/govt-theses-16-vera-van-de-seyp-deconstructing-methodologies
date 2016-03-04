@@ -716,8 +716,42 @@ header {
 	background-color: black;
 	color: $white;
 	font-family: 'Source Code Pro';
-	font-size: $title-l;
-	line-height: $title-ld-l;
+	
+}
+
+.landing-title {
+	position: relative;
+	margin: 30px;
+	@include breakpoint('small') {
+		font-size: $title-s;
+		line-height: $title-ld-s;	
+	}
+	@include breakpoint('medium') {
+		font-size: $title-m;
+		line-height: $title-ld-m;		
+	}
+	@include breakpoint('large') {
+		font-size: $title-l;
+		line-height: $title-ld-l;	
+	}
+	
+}
+
+.landing-subtitle {
+	position: relative;
+	margin: 30px;
+	@include breakpoint('small') {
+		font-size: $title-s;
+		line-height: $title-ld-s;	
+	}
+	@include breakpoint('medium') {
+		font-size: $title-m;
+		line-height: $title-ld-m;		
+	}
+	@include breakpoint('large') {
+		font-size: $title-m;
+		line-height: $title-ld-m;	
+	}
 }
 
 colophon {

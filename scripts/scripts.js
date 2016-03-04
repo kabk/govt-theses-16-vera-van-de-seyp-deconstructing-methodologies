@@ -1,15 +1,16 @@
 
             function logThesis() {
 
-                console.log("\n\n\n    |        '|.   '|' '||''''|  '|| '||'  '|'    '||'  |'  '||' '|.   '|' '||''|.       ..|''||   '||''''|    '||''|.  '||''|.   '||' '|.   '|' |''||''| \n   |||        |'|   |   ||  .     '|. '|.  .'      || .'     ||   |'|   |   ||   ||     .|'    ||   ||  .       ||   ||  ||   ||   ||   |'|   |     ||    \n  |  ||       | '|. |   ||''|      ||  ||  |       ||'|.     ||   | '|. |   ||    ||    ||      ||  ||''|       ||...|'  ||''|'    ||   | '|. |     ||    \n .''''|.      |   |||   ||          ||| |||        ||  ||    ||   |   |||   ||    ||    '|.     ||  ||          ||       ||   |.   ||   |   |||     ||    \n.|.  .||.    .|.   '|  .||.....|     |   |        .||.  ||. .||. .|.   '|  .||...|'      ''|...|'  .||.        .||.     .||.  '|' .||. .|.   '|    .||.    " );
 
+                console.log( $('.landing-page .name-print').text() );
                 console.log("_________________________________________________________________________________________________________________________________________________________\n\n\n")
+
                 $("chapter").each( function() {
-                    console.log("–––––––––––– " + $(this).find('chapternumber').text() + " ––––––––––––");
+                    // console.log("–––––––––––– " + $(this).find('chapternumber').text() + " ––––––––––––");
 
-                    console.log("–––––––––––– " + $(this).find('name').text() + " ––––––––––––");
+                    console.log($(this).find('\n\n\n' + ' .name-print').text());
 
-                    console.log($(this).find('text').text());
+                    console.log( $(this).find('text').text() );
                     console.log("_________________________________________________________________________________________________________________________________________________________\n\n\n")
 
                 });
@@ -370,12 +371,12 @@
                 var title = $('.chapter-title');
                 var menuLink = $('.menu-link');
 
-                if( offset < $(window).height() ) {
+                if( offset < $(window).height() || offset == 0 ) {
                     $("header").css({
-                        'display': "none"
+                        'display': "none",
                     })
                     $(".menu").css({
-                        'display': "none"
+                        'display': "none",
                     })
                 } else {
                     $("header").css({
@@ -477,9 +478,6 @@
                  });
             }
 
-
-
-
               function showVisitTime() {
                 var counter = 0;
                 setInterval(function () {
@@ -553,7 +551,7 @@
             $(document).ready( function() {
 
                 // formatLinks();
-                // logThesis();
+                logThesis();
                 showContentMode(false);
 
                 setHeightContent();
@@ -568,6 +566,7 @@
                 killContent();
                 showTextOnly();
                 viewCode();
+                
                 scrollToChapter();
 
                 showTime();
