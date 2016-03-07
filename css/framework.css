@@ -101,11 +101,7 @@ chapter {
   margin-top: 100px;
   margin-bottom: 100px;
   clear: both;
-  break-after: always;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  break-after: always; }
 
 content {
   position: relative;

@@ -134,7 +134,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 620147,
 		"inputAbbreviatedPath": "\/images\/ch-1\/harry-beck-underground.jpg",
 		"outputAbbreviatedPath": "\/images\/ch-1\/harry-beck-underground.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -365,7 +365,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 258538,
 		"inputAbbreviatedPath": "\/images\/ch-2\/hackerstereotype.jpg",
 		"outputAbbreviatedPath": "\/images\/ch-2\/hackerstereotype.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -808,7 +808,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/styles\/agate.css": {
 		"fileType": 16,
