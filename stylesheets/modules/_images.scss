@@ -28,14 +28,13 @@ images {
 	}
 }
 
-
 .side-image {
 	position: relative;
 	display: block;
 	float: left;
 	width: 100%;
 	height: auto;
-	background-color: $support-color;
+	// background-color: $support-color;
 	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
@@ -55,7 +54,6 @@ images {
 	min-height: 10px;
 	height: auto;
 	margin: 0 0 60px 0;
-	
 }
 
 .image-print {

@@ -293,17 +293,18 @@
             function killContent() {
                 $('#kill').click( function() {
                       $('body').jGravity({
-                        target: 'everything',
-                        weight: 125,
-                        depth: 4,
+                        // target: 'everything',
+                        weight: 10,
+                        depth: 10,
                         drag: true
                       });
-                      $('text').jGravit({
-                        target: 'everything',
-                        weight: 125,
-                        depth: 4,
-                        drag: true
-                      })
+
+                      // $('chapter').jGravit({
+                      //   target: 'everything',
+                      //   weight: 125,
+                      //   depth: 4,
+                      //   drag: true
+                      // })
                 }) 
             }
 
@@ -516,7 +517,7 @@
                 $('.os').text("The version you use is " + os );
                 $('.cookies').text("Cookies are enabled:  " + cookies );
                 $('.language').text("Browser language is " + language );
-                $('.browserversion').text("Browser language is " + version );
+                $('.browserversion').text("Browser version is " + version );
 
             }
 
@@ -554,8 +555,12 @@
             }
 
 
+
             $(document).ready( function() {
 
+                $('#Landing').mouseover( function() {
+                    $('.landing-title').focus();
+                })
                 // formatLinks();
                 logThesis();
                 showContentMode(false);
@@ -613,7 +618,3 @@
                 scrollToChapter();
             })
 
-
-            // $(document).scroll( function () {
-            //     placeReferences();
-            // });

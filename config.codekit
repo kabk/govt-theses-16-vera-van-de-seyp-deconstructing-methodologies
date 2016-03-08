@@ -702,6 +702,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141074,
+		"inputAbbreviatedPath": "\/images\/header.png",
+		"outputAbbreviatedPath": "\/images\/header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/intro\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -808,7 +819,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/styles\/agate.css": {
 		"fileType": 16,
