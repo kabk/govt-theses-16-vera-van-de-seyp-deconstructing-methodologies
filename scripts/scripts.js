@@ -81,6 +81,11 @@
                     'width' : $(window).width(),
                     'height' : $(window).height()
                 })
+
+                $('.full-page-section').css({
+                    'width' : $(window).width(),
+                    'height' : $(window).height()
+                })
             }
 
             function placeReferences(loaded) {
@@ -561,6 +566,10 @@
                 $('#Landing').mouseover( function() {
                     $('.landing-title').focus();
                 })
+
+                var myVid= $("#iframe");
+                myVid.muted=true;
+
                 // formatLinks();
                 logThesis();
                 showContentMode(false);
