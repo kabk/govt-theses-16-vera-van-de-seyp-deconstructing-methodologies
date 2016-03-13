@@ -130,6 +130,15 @@ behind {
 	width: 20px;
 }
 
+.progress-bar {
+	position: fixed;
+	display: block;
+	right: 0;
+	top: 0;
+	width: 4px;
+	height: 0;
+	background-color: $support-color;
+}
 
 
 percent {
@@ -551,14 +560,16 @@ header {
 	line-height: 30px;
 
 	@include breakpoint('small') {
-		padding: 0 $margin-s;
-
+		margin: 0 auto;
+		width: $width-s;
 	}
 	@include breakpoint('medium') {
 		padding: 0 0 0 $margin-content;
+		width: 100%;
 	}
 	@include breakpoint('large') {
 		padding: 0 $margin-content;
+		width: 100%;
 	}
 }
 
@@ -585,6 +596,7 @@ header {
 			display: block;
 			float: left;
 			width: auto;
+
 		}
 		&:nth-of-type(2) {
 			display: none;
@@ -637,9 +649,12 @@ header {
 			float: right;
 			width: auto;
 			width: 33%;
-
 		}
 	}
+}
+
+.header-buttons {
+	float: right;
 }
 
 .menu {
@@ -691,33 +706,47 @@ header {
 	cursor: pointer;
 }
 
+.header-buttons { 
+	@include breakpoint('small') {
+		display: none;
+		width : 180px;
+
+	}
+	@include breakpoint('medium') {
+		display: none;
+		width : 180px;
+	}
+	@include breakpoint('large') {
+		display: block;
+		width : 180px;
+	}
+}
+
 .header-button {
 	position: relative;
 	display: block;
 	color: $light-grey;
 	float: right;
-	padding: 0 $margin-content;
+	padding: 0 $margin-content*2;
 	width: auto;
-	@include breakpoint('small') {
-		display: none;
-	}
-	@include breakpoint('medium') {
-		display: none;
-	}
-	@include breakpoint('large') {
-		display: block;
-	}
+	color: $light-grey;
+}
+
+.header-button:hover{
+	color: blue;
 }
 
 .header-button-small {
 	position: relative;
 	display: block;
-	color: $light-grey;
 	float: right;
-	background-color: black;
+	color: $light-grey;
 	width: 30px;
 	height: 30px;
-	
+	font-size: $title-m;
+	text-align: center;
+	cursor: pointer;
+
 	@include breakpoint('small') {
 		display: block;
 	}
@@ -727,6 +756,11 @@ header {
 	@include breakpoint('large') {
 		display: none;
 	}
+}
+
+.header-button-small:hover{
+	color: $support-color-full;
+
 }
 
 .landing-page {

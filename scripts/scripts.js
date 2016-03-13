@@ -34,6 +34,16 @@
 
                 $('percent').css({
                     "height" : stepHeight,
+                });
+
+            }
+
+            function showProgress() {
+                var height = $(document).height();
+                var scrolled = $(window).scrollTop();
+                var winHeight = $(window).height();
+                $('.progress-bar').css({
+                    'height' : scrolled/height * winHeight,
                 })
             }
 
@@ -203,12 +213,24 @@
                     } else {
                         var tag = $(this).attr('href');
 
-                        $(tag).fadeOut('fast', function() {
-                              $(tag).fadeIn('fast', function() {
-                              });
+                        $(tag).css({
+                           'z-index' : '300',
                         });
-                        $(document).scrollTo( tagLoc, 800 );
                     }
+                });
+
+                $('text a').mouseenter( function() {
+                    var tag = $(this).attr('href');
+                    $(tag).css({
+                       'z-index' : '300',
+                    });
+                });
+
+                $('text a').mouseleave( function() {
+                    var tag = $(this).attr('href');
+                    $(tag).css({
+                       'z-index' : '1',
+                    });
                 });
             }
 
@@ -298,7 +320,7 @@
             function killContent() {
                 $('#kill').click( function() {
                       $('body').jGravity({
-                        // target: 'everything',
+                        // target: 'text',
                         weight: 10,
                         depth: 10,
                         drag: true
@@ -559,6 +581,22 @@
                 }, 1000);
             }
 
+            function toggleHeaderButtonSmall(ViewVisible) {
+                $('.header-button-small').click( function() {
+                    $('.header-buttons').slideToggle('fast');
+                    if( ViewVisible == true ) {
+                        $(this).css({
+                            'color' : '#ccc'
+                        })
+                        ViewVisible = false;
+                    } else {
+                        $(this).css({
+                            'color' : 'rgb(50, 0, 255)',
+                        })
+                        ViewVisible = true;
+                    }
+                });
+            }
 
 
             $(document).ready( function() {
@@ -586,6 +624,7 @@
                 killContent();
                 showTextOnly();
                 viewCode();
+                toggleHeaderButtonSmall(false);
                 
                 scrollToChapter();
 
@@ -616,6 +655,8 @@
 
             });
 
+
+
             $(window).resize( function () {
                 setHeightContent();
                 placeReferences(true);
@@ -625,5 +666,6 @@
 
             $(document).on( 'scroll', function() {
                 scrollToChapter();
+                showProgress();
             })
 
